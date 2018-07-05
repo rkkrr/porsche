@@ -3,7 +3,7 @@
 @section('content')
     <div class="center jumbotron">
         <div class="text-center">
-            <h1>Welcome to the Porsche</h1>
+            <h1>Welcome to the Porsche and I hope this group won't have any conflicts</h1>
         </div>
     </div>
 @endsection
