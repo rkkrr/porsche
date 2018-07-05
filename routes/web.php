@@ -15,7 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('messages/{id}', 'ResultsController@show');
-// Route::post('messages', 'MessagesController@store');
-// Route::put('messages/{id}', 'MessagesController@update');
-// Route::delete('messages/{id}', 'MessagesController@destroy');
+Route::get('/', 'MainController@index');
+Route::get('result', 'MainController@show');
