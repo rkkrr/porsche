@@ -1,3 +1,27 @@
+
+<?php 
+    $Qone = $_POST['radio1'];
+    $Qtwo= $_POST['radio2'];
+    $Qthree = $_POST['radio3'];
+    
+    $result = $Qone + $Qtwo + $Qthree;
+    
+    if($result == 0) {
+        print "error";
+    }
+    else if ($result <= 3){
+        print 'いまいち';
+    }
+    else if ($result <= 6){
+         print 'ふつう';
+    }
+    else{
+        print '元気';
+    }
+    
+?>
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -25,7 +49,6 @@
 
  <button class="btn btn-success btn-lg">
      <a href="result">あなたの孤独度は...</a></button>
-
 
 
 

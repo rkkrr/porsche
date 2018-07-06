@@ -21,9 +21,17 @@ class MainController extends Controller
     }
     
     
-    public function show(){
+    public function show(Request $request){
         
         return view ('psychotest.show');
         
+    }
+    
+    public function store(){
+        $data = new Result;
+        $data->id = $request->id;
+        $data->nickname = $request->nickname;
+        $data->q1 =  $request->q1;
+        $data->save();
     }
 }
