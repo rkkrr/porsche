@@ -12,7 +12,7 @@
         
         <div class="text-center">
          <div class = btn btn-lg btn-primary >
-            <a href="result">結果は！！</a>
+            <a href="test">テストを受ける！</a>
          </div>     
         </div>
 @endsection

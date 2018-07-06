@@ -15,6 +15,11 @@ class MainController extends Controller
         
     }
     
+    public function test(){
+        
+        return view ('psychotest.test');
+    }
+    
     
     public function show(){
         

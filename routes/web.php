@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test', 'MainController@index');
+Route::get('a', 'MainController@index');
 
-//show pageにとぶ
+//test pageにとぶ
+Route::get('test', 'MainController@test')->name('test.take');
+
 Route::get('result', 'MainController@show')->name('result.get');
