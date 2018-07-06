@@ -19,8 +19,8 @@
   <label><input type="radio" name="q3" id="radio3" value="1" > 全く感じない</label>
   {!! Form::submit('送信！', ['class' => 'btn btn-primary btn-block']) !!}
 {!! Form::close() !!}
-<!--</form>-->
-<!--  <input type="submit" value="送信">-->
+
+
 
 <br>
  <button class="btn btn-success btn-lg">

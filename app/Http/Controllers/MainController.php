@@ -31,9 +31,25 @@ class MainController extends Controller
     public function store(Request $request){
         $data = new Result;
         $data->id = $request->id;
-        $data->nickname = $request->nickname;
         $data->q1 =  $request->q1;
+        $data->q2 =  $request->q2;
+        $data->q3 =  $request->q3;
         $data->save();
-        print $data;
+      
+      return view ('psychotest.show', $data);
+    }
+    
+    public function score($data){
+        
+       $result1 = $data->q1;
+       $result2 = $data->q2;
+       $result3 = $data->q3;
+       
+       $result = $result1+$result2+$result3;
+       
+
+       
+        
+        
     }
 }
