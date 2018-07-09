@@ -17,12 +17,7 @@
   <label><input type="radio" name="q3" id="radio3" value="3">とても感じる </label>
   <label><input type="radio" name="q3" id="radio3" value="2" >どちらともいえない </label>
   <label><input type="radio" name="q3" id="radio3" value="1" > 全く感じない</label>
-  {!! Form::submit('送信！', ['class' => 'btn btn-primary btn-block']) !!}
+  {!! Form::submit('あなたの孤独度は…！', ['class' => 'btn btn-primary btn-block']) !!}
 {!! Form::close() !!}
 
-
-
-<br>
- <button class="btn btn-success btn-lg">
-     <a href="result">あなたの孤独度は...</a></button>
 @endsection

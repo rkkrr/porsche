@@ -29,6 +29,13 @@ class MainController extends Controller
     }
     
     public function store(Request $request){
+        
+        $this->validate($request, [
+           'q1' => 'required',
+           'q2' => 'required',
+           'q3' => 'required',
+       ]);
+        
         $data = new Result;
         $data->id = $request->id;
         $data->q1 =  $request->q1;
