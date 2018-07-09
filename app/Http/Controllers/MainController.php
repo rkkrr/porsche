@@ -37,7 +37,7 @@ class MainController extends Controller
        ]);
         
         $data = new Result;
-        $data->id = $request->id;
+        //$data->id = $request->id;
         $data->q1 =  $request->q1;
         $data->q2 =  $request->q2;
         $data->q3 =  $request->q3;
