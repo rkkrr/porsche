@@ -24,7 +24,7 @@ class MainController extends Controller
     
     public function show(){
         
-        return view ('psychotest.show');
+        return view ('/');
         
     }
     
@@ -37,26 +37,16 @@ class MainController extends Controller
        ]);
         
         $data = new Result;
-        //$data->id = $request->id;
+
         $data->q1 =  $request->q1;
         $data->q2 =  $request->q2;
         $data->q3 =  $request->q3;
         $data->save();
-      
-      return view ('psychotest.show', $data);
-    }
-    
-    public function score($data){
         
-       $result1 = $data->q1;
-       $result2 = $data->q2;
-       $result3 = $data->q3;
-       
-       $result = $result1+$result2+$result3;
-       
-
-       
+        $result =intval($data->q1)+intval($data->q2)+intval($data->q3);
+ 
         
+      return view ('psychotest.show', $result);
         
     }
 }
