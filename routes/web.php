@@ -22,3 +22,4 @@ Route::post('answer', 'MainController@store')->name('answer.store');
 Route::get('test', 'MainController@test')->name('test.take');
 
 Route::get('result', 'MainController@show')->name('result.get');
+

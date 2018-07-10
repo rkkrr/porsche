@@ -9,7 +9,7 @@
     　</div>
     
             <div class="text-center">
-                <h1>あなたの寂しさ度は......点！！！！</h1>
+                <h1>あなたの寂しさ度は{{$result}}点！！！！</h1>
         </div>
     </div>
     
