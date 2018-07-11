@@ -112,6 +112,33 @@
     <th><label><input type="radio" name="q11" id="radio11" value="5" ></label></th>
     <th><label><input type="radio" name="q11" id="radio11" value="0" ></label></th>
     </tr>
+    
+    <tr>
+    <td>&nbsp;</td>
+    </tr>  
+    
+     <tr>
+    <th><h4><label> </label></h4></th>
+    <th><label> </label></th>
+    <th><h4><label>映画 </label></h4></th>
+    <th><label> </label></th>
+    <th><h4><label>本</label></h4></th>
+    <th><label></label></th>
+    </tr>
+        
+    
+    <tr>
+     <th><h4>Q12、あなたは映画と本ならどちらがより好きですか？</h4></th>
+     <th><label> </label></th>
+     <th><label><input type="radio" name="q12" id="radio12" value=""></label></th>
+     <th><label> </label></th>
+     <th><label><input type="radio" name="q12" id="radio12" value=""></label></th>
+     <th><label> </label></th>
+    </tr>
+    
+     <tr>
+    <td>&nbsp;</td>
+    </tr>  
    
 <div id ="organize" >
   {!! Form::submit('あなたの孤独度は…！', ['class' => 'btn btn-primary btn-block']) !!}
