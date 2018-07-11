@@ -37,17 +37,12 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">
                         心理テストの詳細結果
-                        <?php if($result <= 40){
-        print 'あなたはREIKO MASTERタイプです。' . PHP_EOL;
-    }
-    elseif($result <= 80){
-        print 'あなたはぎーのです。' . PHP_EOL;
-    }
-        else{
-        print 'あなたは七月彦です。' . PHP_EOL;
-    }　
-    ?>
-                    </h3>
+                       </h3>
+                    <p> 
+                    <?php if($result <= 40){ print 'あなたはREIKO MASTERタイプです。' . PHP_EOL;  }
+                      elseif($result <= 80){ print 'あなたはぎーのです。' . PHP_EOL;    }
+                      else{   print 'あなたは七月彦です。' . PHP_EOL;    }　?>
+                      </p>
                 </div>
                 <div class="panel-body">
                     <ul class="list-unstyled">
