@@ -25,9 +25,17 @@
                 <div class="panel-body">
                     <ul class="list-unstyled">
                       <?php 
-                      if($result <= 40){ print  'あなたはREIKO MASTERタイプです。' . PHP_EOL; }
-                      elseif($result <= 80){ print  'あなたはGINOタイプです。' . PHP_EOL;  }
-                      else{ print  'あなたは七月彦タイプです。' . PHP_EOL;}
+                      if($result <= 40){ 
+                          if($content == 1){  
+                          print  'スイミー' . PHP_EOL; }
+                          else{  print  'The notebook' . PHP_EOL; }}
+                      elseif($result <= 80){
+                          if($content == 1){  
+                          print  'Good will hunting' . PHP_EOL; }
+                          else{  print  '嫌われる勇気' . PHP_EOL; }}
+                      else{if($content == 1){  
+                          print  '深夜特急' . PHP_EOL; }
+                          else{  print  'グレイテストショーマン' . PHP_EOL; }}
                       ?>
                     </ul>
                 </div>
