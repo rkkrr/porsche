@@ -9,7 +9,7 @@
     　</div>
     
             <div class="text-center">
-                <h1>あなたの寂しさ度は......点！！！！</h1>
+                <h1>あなたの寂しさ度は{{$result}}点！！！！</h1>
         </div>
     </div>
     
@@ -24,9 +24,9 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-unstyled">
-                      <li><a href="#">友達リクエストが1件あります</a></li>
-                      <li><a href="#">メッセージが3件届いています</a></li>
-                      <li><a href="#">今日開催のイベントがあります</a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
                     </ul>
                 </div>
             </div>
@@ -37,13 +37,18 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">
                         心理テストの詳細結果
-                    </h3>
+                       </h3>
+                    <p> 
+                    <?php if($result <= 40){ print 'あなたはREIKO MASTERタイプです。' . PHP_EOL;  }
+                      elseif($result <= 80){ print 'あなたはぎーのです。' . PHP_EOL;    }
+                      else{   print 'あなたは七月彦です。' . PHP_EOL;    }　?>
+                      </p>
                 </div>
                 <div class="panel-body">
                     <ul class="list-unstyled">
-                        <li><a href="#">友達リクエストが1件あります</a></li>
-                        <li><a href="#">メッセージが3件届いています</a></li>
-                        <li><a href="#">今日開催のイベントがあります</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
             </div>
