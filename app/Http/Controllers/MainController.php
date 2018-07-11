@@ -42,6 +42,7 @@ class MainController extends Controller
            'q9' => 'required',
            'q10' => 'required',
            'q11' => 'required',
+           'q12' => 'required',
         
            
        ]);
@@ -59,7 +60,6 @@ class MainController extends Controller
         $data->q9 =  $request->q9;
         $data->q10 = $request->q10;
         $data->q11 = $request->q11;
-        
         $data->q12 = $request->q12;
        
        $data->save();
