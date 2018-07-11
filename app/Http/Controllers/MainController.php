@@ -24,32 +24,50 @@ class MainController extends Controller
     
     public function show(){
         
-        return view ('psychotest.show');
+        return view ('/');
         
     }
     
     public function store(Request $request){
+        
+        $this->validate($request, [
+           'q1' => 'required',
+           'q2' => 'required',
+           'q3' => 'required',
+           'q4' => 'required',
+           'q5' => 'required',
+           'q6' => 'required',
+           'q7' => 'required',
+           'q8' => 'required',
+           'q9' => 'required',
+           'q10' => 'required',
+           'q11' => 'required',
+        
+           
+       ]);
+        
         $data = new Result;
-        $data->id = $request->id;
         $data->q1 =  $request->q1;
         $data->q2 =  $request->q2;
         $data->q3 =  $request->q3;
+        $data->q4 =  $request->q4;
+        $data->q5 =  $request->q5;
+        $data->q6 =  $request->q6;
+        $data->q7 =  $request->q7;
+        $data->q8 =  $request->q8;
+        $data->q9 =  $request->q9;
+        $data->q10 = $request->q10;
+        $data->q11 = $request->q11;
+        
         $data->save();
-      
-      return view ('psychotest.show', $data);
+        
+        $result = $this->score($data);
+        
+       return view ('psychotest.show', ['result' => $result]);
+        
     }
-    
-    public function score($data){
-        
-       $result1 = $data->q1;
-       $result2 = $data->q2;
-       $result3 = $data->q3;
-       
-       $result = $result1+$result2+$result3;
-       
-
-       
-        
-        
+    function score($data){
+        $result =intval($data->q1)+intval($data->q2)+intval($data->q6)+intval($data->q7)+intval($data->q10)+intval($data->q11);
+        return $result;
     }
 }
