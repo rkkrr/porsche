@@ -25,29 +25,42 @@
                 <div class="panel-body">
                     <ul class="list-unstyled">
                       <?php 
-                      if($result <= 40){ 
+                     if($result <= 40){ 
                           if($content == 1){  
-                          print  'スイミー' . PHP_EOL; }
+                          print  'The notebook' . PHP_EOL; 
+                     ?>
+                     <span class="glyphicon glyphicon-film" style="font-size: 20px"></span>
+
+                     <?php
+                         } else{  print  'スイミー' . PHP_EOL; }
                      ?>
                      <span class="glyphicon glyphicon-book"></span>
 
-                     <?php
-                          }else{  print  'The notebook' . PHP_EOL; }
-                     ?>
-                     <span class="glyphicon glyphicon-film"></span>
-
                     <?php
-                      elseif($result <= 80){
+                    }elseif($result <= 80){
                           if($content == 1){  
-                          print  'Good will hunting' . PHP_EOL; }
+                          print  'Good will hunting' . PHP_EOL; 
                     ?>
-                       <span class="glyphicon glyphicon-book"></span>
-    
-                          
-                          else{  print  '嫌われる勇気' . PHP_EOL; }}
-                      else{if($content == 1){  
-                          print  '深夜特急' . PHP_EOL; }
-                          else{  print  'グレイテストショーマン' . PHP_EOL; }}
+                       <span class="glyphicon glyphicon-film" style="font-size: 20px"></span>
+                   
+                   <?php
+                         }else{  print  '嫌われる勇気' . PHP_EOL; }
+                         
+                    ?>
+                    <span class="glyphicon glyphicon-book"></span>
+                    
+                    <?php
+                      }else{if($content == 1){  
+                          print  'グレイテストショーマン' . PHP_EOL; 
+                    ?>
+                    <span class="glyphicon glyphicon-film"></span>
+                    
+                    <?php
+                          }else{  print  '深夜特急' . PHP_EOL; }
+                    ?>
+                    <span class="glyphicon glyphicon-book"></span>
+                    <?php
+                      }
                       ?>
                     </ul>
                 </div>
