@@ -130,9 +130,9 @@
     <tr>
      <th><h4>Q12、あなたは映画と本ならどちらがより好きですか？</h4></th>
      <th><label> </label></th>
-     <th><label><input type="radio" name="q12" id="radio12" value=""></label></th>
+     <th><label><input type="radio" name="q12" id="radio12" value="1"></label></th>
      <th><label> </label></th>
-     <th><label><input type="radio" name="q12" id="radio12" value=""></label></th>
+     <th><label><input type="radio" name="q12" id="radio12" value="2"></label></th>
      <th><label> </label></th>
     </tr>
     
