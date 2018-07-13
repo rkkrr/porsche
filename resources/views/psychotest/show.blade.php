@@ -1,6 +1,9 @@
 @extends('layouts.app')
+
 @section('content')
- <div class="jumbotron"  style="background:url(images/raising.jpg); background-size:cover;">
+ <div class="opaque-background" style="background:url(images/children.jpg)" "background-size:cover">
+     
+
     <div class="text-center">
         <h1>結果</h1>
         <h1>あなたの寂しさ度は{{$result}}点！！！！</h1>
@@ -111,5 +114,6 @@
 <div class="text-center">
     <button class="btn btn-success btn-lg" type="submit">購入したい方はこちら！</button>
 </div>
+
 </div>
 @endsection
