@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+ <div class="jumbotron"  style="background:url(images/raising.jpg); background-size:cover;">
     <div class="text-center">
         <h1>結果</h1>
         <h1>あなたの寂しさ度は{{$result}}点！！！！</h1>
@@ -48,18 +49,18 @@
                             <br><span class="glyphicon glyphicon-film" style="font-size: 120px"></span></br>
                 
                 <?php 
-                            print  'The notebook' ;
+                            print "<h2> 'The notebook'</h2>" ;
                             print "<br>";
-                            print '激しい恋の物語、何も考えるな、感じろ。' . PHP_EOL;
+                            print  "<font size = 3px> '激しい恋の物語、何も考えるな、感じろ。' </font>". PHP_EOL;
                         } else{
                 ?>  
                 
                             <br><span class="glyphicon glyphicon-book" style="font-size: 120px"></span></br>
                 
                 <?php    
-                            print  'スイミー' . PHP_EOL; 
+                            print "<h2> 'スイミー' </h2>". PHP_EOL; 
                             print "<br>";
-                            print '仲間を失って一人ぼっちのおさかなが、海のさまざまないきものと出会ううちに、勇気をもって踏み出すことを学んでいくお話です。' . PHP_EOL;
+                            print "<font size = 3px>'仲間を失って一人ぼっちのおさかなが、海のさまざまないきものと出会ううちに、勇気をもって踏み出すことを学んでいくお話です。'  </font>". PHP_EOL;
                     }}elseif($result <= 80){
                         if($content == 1){
                 ?>
@@ -67,18 +68,18 @@
                             <br><span class="glyphicon glyphicon-film" style="font-size: 120px"></span></br>
                 
                 <?php
-                            print  'Good will hunting' . PHP_EOL; 
+                            print  "<h2> 'Good will hunting' </h2>"; 
                             print "<br>";
-                            print '天才的な頭脳を持ちながら喧嘩を繰り返す若者と、彼に数学の才能を見出した教授との交流を通して成長していく過程を描いたヒューマンドラマ。' . PHP_EOL;} 
+                            print "<font size = 3px> '天才的な頭脳を持ちながら喧嘩を繰り返す若者と、彼に数学の才能を見出した教授との交流を通して成長していく過程を描いたヒューマンドラマ。' </font>". PHP_EOL;} 
                          
                         else{
                 ?>
                      
                             <br><span class="glyphicon glyphicon-book" style="font-size: 120px"></span></br>
                 <?php   
-                            print  '嫌われる勇気' . PHP_EOL; 
+                            print  "<h2> '嫌われる勇気' </h2>". PHP_EOL; 
                             print "<br>";
-                            print '世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓発本。'. PHP_EOL;
+                            print "<font size = 3px>'世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓発本。'</font>". PHP_EOL;
                     }}else{
                         if($content == 1){
                 ?>
@@ -86,18 +87,18 @@
                             <br><span class="glyphicon glyphicon-film" style="font-size: 120px"></span></br>
                     
                 <?php
-                            print  'グレイテストショーマン' . PHP_EOL; 
+                            print  "<h2> 'グレイテストショーマン'</h2>" . PHP_EOL; 
                             print "<br>";
-                            print '主人公バーナムはオンリーワンの個性を持つ人々を集めたショーで成功することはできるのか…とにかく明るくなりたい人にオススメ！！' . PHP_EOL;}
+                            print "<font size = 3px>'主人公バーナムはオンリーワンの個性を持つ人々を集めたショーで成功することはできるのか…とにかく明るくなりたい人にオススメ！！'</font>" . PHP_EOL;}
                         else{
                 ?>
                 
                             <br><span class="glyphicon glyphicon-book" style="font-size: 120px"></span></br>
                       
                 <?php 
-                            print  '深夜特急' . PHP_EOL; 
+                            print  "<h2> '深夜特急' </h2>". PHP_EOL; 
                             print "<br>";
-                            print '“長旅は人間の一生と同等のものである” --インドのデリーからイギリスのロンドンまでの旅を筆者自身の実体験に基づいて執筆した作品。' . PHP_EOL;}}
+                            print "<font size = 3px> '長旅は人間の一生と同等のものである” --インドのデリーからイギリスのロンドンまでの旅を筆者自身の実体験に基づいて執筆した作品。'</font>" . PHP_EOL;}}
                 ?>
             </ul>
             </div>
@@ -109,5 +110,6 @@
 </div>
 <div class="text-center">
     <button class="btn btn-success btn-lg" type="submit">購入したい方はこちら！</button>
+</div>
 </div>
 @endsection

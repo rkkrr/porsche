@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
- <div class="jumbotron"  style="background:url(images/raising.jpg); background-size:cover;"
 {!! Form::open(['route' => 'answer.store']) !!}
   <table class="table table-hover">
     <tr>
@@ -139,15 +138,11 @@
      <tr>
     <td>&nbsp;</td>
     </tr>  
+    </table>
    
-<div id ="organize" >
+
   {!! Form::submit('あなたの孤独度は…！', ['class' => 'btn btn-primary btn-block']) !!}
-</div>
-  
-  
-{!! Form::close() !!}
-
-
+  {!! Form::close() !!}
 
 
 @endsection
