@@ -1,8 +1,8 @@
 @extends('layouts.app')
- <div class="opaque-background" style="background:url(images/children.jpg)">
+ <div class="opaque-background" style="background:url(images/children.jpg)" "background-size:cover">
 
 @section('content')
-
+     
 
     <div class="text-center">
         <h1>結果</h1>
