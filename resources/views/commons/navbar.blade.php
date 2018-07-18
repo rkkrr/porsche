@@ -1,4 +1,7 @@
+<!DOCTYPE html>
+<html>
 <header>
+    <link rel="stylesheet" href="{{ secure_asset('css/showresult.css') }}">
     <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -19,3 +22,4 @@
         </div>
     </nav>
 </header>
+</html>
