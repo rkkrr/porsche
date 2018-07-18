@@ -18,6 +18,8 @@ Route::get('/', function () {
 
 Route::get('/home', 'MainController@index');
 Route::post('answer', 'MainController@store')->name('answer.store');
+Route::post('answer2', 'MainController@store2')->name('answer2.store2');
+
 
 //test pageにとぶ
 Route::get('test', 'MainController@test')->name('test.take');
@@ -31,3 +33,7 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 // user registration
 Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
 Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
+
+//test2 page にとぶ
+Route::get('test2', 'MainController@test2')->name('test2.take2');
+
