@@ -12,10 +12,17 @@
 
 }
 
+
+/*//bootstrap navbar*/
 .navbar {
   background-color: #d9f8c1;
+  min-height: 40px !important;
 }
 .navbar .navbar-brand {
+　background: url("logo.png") no-repeat left center;
+  background-size: contain;
+  height: 40px;
+  width: 250px;
   color: #0f586a;
 }
 .navbar .navbar-brand:hover,
@@ -138,3 +145,5 @@
   color: #e0f1f3;
   background-color: #151918;
 }
+
+/*//bootstrap navbar*/

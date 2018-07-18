@@ -2,9 +2,7 @@
  <div class="opaque-background" style="background:url(images/children.jpg)" "background-size:cover">
 
 @section('content')
-     
-
-    <div class="text-center">
+        <div class="text-center">
         <h1>結果</h1>
         <h1>あなたの寂しさ度は{{$result}}点！！！！</h1>
     </div>
@@ -115,6 +113,9 @@
 </div>
 <div class="text-center">
     <button class="btn btn-success btn-lg" type="submit">購入したい方はこちら！</button>
+</div>
+<div>
+    
 </div>
 
 </div>
