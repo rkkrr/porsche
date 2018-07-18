@@ -1,12 +1,28 @@
 @extends('layouts.app')
- <div class="opaque-background" style="background:url(images/children.jpg)" "background-size:cover">
+ <!--<div class="opaque-background" style="background:url(images/children.jpg)" "background-size:cover">-->
 
 @section('content')
      
 
     <div class="text-center">
         <h1>結果</h1>
-        <h1>あなたの寂しさ度は{{$result}}点！！！！</h1>
+           
+          <div class="animal"> 
+          <div style="font-size:30pt;">
+            <?php
+                if($result <= 20){ 
+                    print  'あなたはハムスタータイプです' . PHP_EOL; }
+                else if($result <= 40){ 
+                    print  'あなたはひつじタイプです' . PHP_EOL; }
+                else if($result <= 60){ 
+                    print  'あなたはこじかタイプです' . PHP_EOL; }
+                else if($result <= 80){ 
+                    print  'あなたはおおかみタイプです' . PHP_EOL; }
+                else ($result <= 120){ 
+                    print  'あなたは鳳凰タイプです' . PHP_EOL; }
+                    ?>
+            </div>
+            </div>
     </div>
 <br>
 <div class="container">
@@ -82,7 +98,7 @@
                 <?php   
                             print  "<h2> '嫌われる勇気' </h2>". PHP_EOL; 
                             print "<br>";
-                            print "<font size = 3px>'世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓発本。'</font>". PHP_EOL;
+                            print "<font size = 3px>'世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓���本。'</font>". PHP_EOL;
                     }}else{
                         if($content == 1){
                 ?>
