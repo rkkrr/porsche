@@ -59,12 +59,15 @@ class MainController extends Controller
         $data->q9 =  $request->q9;
         $data->q10 = $request->q10;
         $data->q11 = $request->q11;
+        $data->q12 = $request->q12;
         
         $data->save();
         
         $result = $this->score($data);
         
-       return view ('psychotest.show', ['result' => $result]);
+        $content =  $data->q12;
+        
+       return view ('psychotest.show', ['result' => $result, 'content'=>$content]);
         
     }
     
