@@ -61,17 +61,18 @@ class MainController extends Controller
         $data->q10 = $request->q10;
         $data->q11 = $request->q11;
         $data->q12 = $request->q12;
-       
-       $data->save();
-       
-       $result = $this->score($data);
-       
-       $content =  $data->q12;
-       
-      return view ('psychotest.show', ['result' => $result, 'content'=>$content]);
-       
-   } 
-    
+
+        
+        $data->save();
+        
+        $result = $this->score($data);
+        
+        $content =  $data->q12;
+        
+       return view ('psychotest.show', ['result' => $result, 'content'=>$content]);
+        
+    }
+
     function score($data){
         $result =intval($data->q1)+intval($data->q2)+intval($data->q6)+intval($data->q7)+intval($data->q10)+intval($data->q11);
         return $result;
