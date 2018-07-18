@@ -32,7 +32,7 @@
                <div class="text-center">
          <div class = btn btn-lg btn-primary >
              <div style="font-size:15pt;">
-            <a href="test">みんなと過ごしたいあなたはこちら！！</a>
+            <a href="test2">みんなと過ごしたいあなたはこちら！！</a>
          </div>   
          </div>     
         </div>
