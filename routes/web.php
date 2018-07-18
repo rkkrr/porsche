@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('a', 'MainController@index');
+
+Route::get('/', 'MainController@index');
 Route::post('answer', 'MainController@store')->name('answer.store');
 
 //test pageにとぶ

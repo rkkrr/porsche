@@ -42,6 +42,7 @@ class MainController extends Controller
            'q9' => 'required',
            'q10' => 'required',
            'q11' => 'required',
+           'q12' => 'required',
         
            
        ]);
@@ -60,6 +61,7 @@ class MainController extends Controller
         $data->q10 = $request->q10;
         $data->q11 = $request->q11;
         $data->q12 = $request->q12;
+<<<<<<< HEAD
         
         $data->save();
         
@@ -70,9 +72,22 @@ class MainController extends Controller
        return view ('psychotest.show', ['result' => $result, 'content'=>$content]);
         
     }
+=======
+       
+       $data->save();
+       
+       $result = $this->score($data);
+       
+       $content =  $data->q12;
+       
+      return view ('psychotest.show', ['result' => $result, 'content'=>$content]);
+       
+   } 
+>>>>>>> f66d1903e81c31303325a7f742e1785b60c37cf0
     
     function score($data){
         $result =intval($data->q1)+intval($data->q2)+intval($data->q6)+intval($data->q7)+intval($data->q10)+intval($data->q11);
         return $result;
     }
+
 }
