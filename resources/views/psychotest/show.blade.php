@@ -144,7 +144,7 @@
                                      
                                             <br><span class="glyphicon glyphicon-book" style="font-size: 120px"></span></br>
                                 <?php   
-                                            print  "<h2> '嫌われる勇気' </h2>". PHP_EOL; 
+                                            print  "<h2> '365日世界一周　絶景の旅（365日絶景シリーズ）' </h2>". PHP_EOL; 
                                             print "<br>";
                                             print "<font size = 3px>'世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓本。'</font>". PHP_EOL;
                                     }}
@@ -195,60 +195,60 @@
                                            
                                 
                                 <?php 
-                                            print "<h2> '名言１'</h2>" ;
+                                            print "<h3> 'みんな自分の能力を疑いすぎるのです。自分で自分を疑っていては、最善を尽くすことなんてできないんです。自分が信じなかったとしたら、誰が信じてくれるのでしょう？'</h3>" ;
                                             print "<br>";
-                                            print  "<font size = 3px> '名言言った人１' </font>". PHP_EOL;
+                                            print  "<font size = 3px> 'マイケル・ジャクソン' </font>". PHP_EOL;
                                         } else{
                                 ?>
                                 <?php    
-                                            print "<h2> '名言２' </h2>". PHP_EOL; 
+                                            print "<h3> '私はこれまでの人生でずっと「私は愛されない人間なんだ」と思ってきたの。でも私の人生にはそれよりもっと悪いことがあったと、はじめて気がついたの。私自身、心から人を愛そうとしなかったのよ。' </h3>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 3px>'名言言った人２'  </font>". PHP_EOL;
+                                            print "<font size = 3px>'マリリン・モンロー'  </font>". PHP_EOL;
                                     }}
                                  //ひつじ
                                     elseif($result <= 40){
                                         if($content == 1){
                                 ?>
                                 <?php
-                                            print  "<h2> '名言３' </h2>"; 
+                                            print  "<h3> '世界には、きみ以外には誰も歩むことのできない唯一の道がある。その道はどこに行き着くのか、と問うてはならない。ひたすら進め。' </h3>"; 
                                             print "<br>";
-                                            print "<font size = 3px> '名言言った人３' </font>". PHP_EOL;} 
+                                            print "<font size = 3px> 'ニーチェ' </font>". PHP_EOL;} 
                                         else{
                                 ?>
                                 <?php   
-                                            print  "<h2> '名言４' </h2>". PHP_EOL; 
+                                            print  "<h3> '過去ばかり振り向いていたのではダメだ。自分がこれまで何をして、これまでに誰だったのかを受け止めた上で、それを捨てればいい。' </h3>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 3px>'名言言った人４</font>". PHP_EOL;
+                                            print "<font size = 3px>'スティーブ・ジョブズ'</font>". PHP_EOL;
                                     }}
                                 //こじか
                                     elseif($result <= 60){
                                         if($content == 1){
                                 ?>
                                 <?php
-                                            print  "<h2> '名言５' </h2>"; 
+                                            print  "<h3> 'どんな日であれ、その日をとことん楽しむこと。ありのままの一日。ありのままの人々。過去は、現在に感謝すべきだということをわたしに教えてくれたような気がします。未来を心配してばかりいたら、現在を思うさま楽しむゆとりが奪われてしまうわ。' </h3>"; 
                                             print "<br>";
-                                            print "<font size = 3px> '名言言った人５' </font>". PHP_EOL;} 
+                                            print "<font size = 3px> 'オードリー・ヘップバーン' </font>". PHP_EOL;} 
                                         else{
                                 ?>
                                 <?php   
-                                            print  "<h2> '名言６' </h2>". PHP_EOL; 
+                                            print  "<h3> '私は失敗したことがない。ただ、1万通りの、うまく行かない方法を見つけただけだ。' </h3>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 3px>'名言言った人６</font>". PHP_EOL;
+                                            print "<font size = 3px>'トーマス・エジソン'</font>". PHP_EOL;
                                     }}
                                 //おおかみ
                                     elseif($result <= 80){
                                         if($content == 1){
                                 ?>
                                 <?php
-                                            print  "<h2> 'れいこだよ' </h2>"; 
+                                            print  "<h3> '太陽の光と雲ひとつない青空があって、それを眺めていられるかぎり、どうして悲しくなれるというの？' </h3>"; 
                                             print "<br>";
-                                            print "<font size = 3px> 'れいこさん' </font>". PHP_EOL;} 
+                                            print "<font size = 3px> 'アンネ・フランク' </font>". PHP_EOL;} 
                                         else{
                                 ?>
                                 <?php   
-                                            print  "<h2> '名言８' </h2>". PHP_EOL; 
+                                            print  "<h3> '名誉を失っても、もともとなかったと思えば生きていける。財産を失ってもまたつくればよい。しかし勇気を失ったら、生きている値打ちがない。' </h3>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 3px>'名言言った人８</font>". PHP_EOL;
+                                            print "<font size = 3px>'ゲーテ</font>". PHP_EOL;
                                     }}
                                  //鳳凰
                                     else{
@@ -289,15 +289,15 @@
                                     if($content == 1){
                             ?> 
                             <?php 
-                                        print "<h2> 'いやし１'</h2>" ;
+                                        print "<h2> '王様の抱き枕'</h2>" ;
                                         print "<br>";
-                                        print  "<font size = 3px> '商品説明１' </font>". PHP_EOL;
+                                        print  "<font size = 3px> '抱きつきながら眠る幸せ、ムニュふわ～の新感覚！' </font>". PHP_EOL;
                                     } else{
                             ?>
                             <?php    
-                                        print "<h2> 'いやし２' </h2>". PHP_EOL; 
+                                        print "<h2> 'アクアチューブ　クラゲ　小' </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>'商品説明２'  </font>". PHP_EOL;
+                                        print "<font size = 3px>''  </font>". PHP_EOL;
                                 }}
                              //ひつじ
                                 elseif($result <= 40){
@@ -319,9 +319,9 @@
                                     if($content == 1){
                             ?>
                             <?php
-                                        print  "<h2> 'いやし５' </h2>"; 
+                                        print  "<h2> '美睡眠　あしまくら' </h2>"; 
                                         print "<br>";
-                                        print "<font size = 3px> '商品説明５' </font>". PHP_EOL;} 
+                                        print "<font size = 3px> '脚にもまくらを。あなたの脚の形にフィットしてくれるカーブ形状、脚用まくらです！' </font>". PHP_EOL;} 
                                     else{
                             ?>
                             <?php   

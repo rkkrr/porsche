@@ -15,7 +15,7 @@
 
 Route::get('/', 'MainController@index');
 Route::post('answer', 'MainController@store')->name('answer.store');
-Route::post('answer2', 'MainController@store2')->name('answer2.store2');
+Route::post('answer2', 'MainController@store2')->name('answer2.store2k');
 
 
 //test pageにとぶ
