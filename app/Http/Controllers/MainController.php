@@ -22,6 +22,7 @@ class MainController extends Controller
     }
     
     
+    
     public function show(){
         
         return view ('/');
@@ -77,5 +78,18 @@ class MainController extends Controller
         $result =intval($data->q1)+intval($data->q2)+intval($data->q6)+intval($data->q7)+intval($data->q10)+intval($data->q11);
         return $result;
     }
+    
+    
+   public function test2(){
+        
+        return view ('psychotest.test2');
+    } 
+    
+   public function store2(){
+        
+        return view ('');
+        
+    }
 
 }
+
