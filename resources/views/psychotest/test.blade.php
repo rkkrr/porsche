@@ -12,35 +12,35 @@
         
     </tr>
     <tr>
-   <th> <h4>Q1、私は私の生き方を誰かが理解してくれると思う。</h4></th>
+   <th> <h4>Q1、誰かが自分の生き方を理解してくれると思う。</h4></th>
     <th><label><input type="radio" name="q1" id="radio1" value="0"> </label></th>
     <th><label><input type="radio" name="q1" id="radio1" value="10"checked></label></th>
     <th><label><input type="radio" name="q1" id="radio1" value="20" ></label></th>
     </tr>
     
      <tr>
-    <th><h4>Q2、人間は、互いに相手の気持ちを分かり合えると思う。</h4></th>
+    <th><h4>Q2、人間は互いに相手の気持ちを分かり合えると思う。</h4></th>
 　　<th><label><input type="radio" name="q2" id="radio2" value="0"> </label></th>
     <th><label><input type="radio" name="q2" id="radio2" value="10"checked></label></th>
     <th><label><input type="radio" name="q2" id="radio2" value="20" ></label></th>
     </tr>
     
     <tr>
-    <th><h4>Q3、悩んでいる時、慰めてくれる人が私にはいる。</h4></th>
+    <th><h4>Q3、悩んでいる時、慰めてくれる人がいる。</h4></th>
  　<th><label><input type="radio" name="q3" id="radio3" value="5"> </label></th>
     <th><label><input type="radio" name="q3" id="radio3" value="3"checked></label></th>
     <th><label><input type="radio" name="q3" id="radio3" value="1" ></label></th>
     </tr>
     
     <tr>
-    <th><h4>Q4、自分の課題は、最後は、自分で解決しなくてはならないのだと思う。</h4></th>
+    <th><h4>Q4、もっと人にやさしくされてもいいと思う。</h4></th>
  　 <th><label><input type="radio" name="q4" id="radio4" value="5"> </label></th>
     <th><label><input type="radio" name="q4" id="radio4" value="3"checked></label></th>
     <th><label><input type="radio" name="q4" id="radio4" value="1" ></label></th>
     </tr>
     
     <tr>
-    <th><h4>Q5、私のことに親身に相談相手になってくれる人はいないと思う。</h4></th>
+    <th><h4>Q5、親身に相談相手になってくれる人はいないと思う。</h4></th>
 　　<th><label><input type="radio" name="q5" id="radio5" value="5"> </label></th>
     <th><label><input type="radio" name="q5" id="radio5" value="3"checked></label></th>
     <th><label><input type="radio" name="q5" id="radio5" value="1" ></label></th>
@@ -61,14 +61,14 @@
     </tr>
     
     <tr>
-   <th> <h4>Q8、人と一緒に喜びや悩みを分かち合うことなどできないと思う。</h4></th>
+   <th> <h4>Q8、人と喜びを分かち合いたい。</h4></th>
 　　<th><label><input type="radio" name="q8" id="radio8" value="5"> </label></th>
     <th><label><input type="radio" name="q8" id="radio8" value="3"checked></label></th>
     <th><label><input type="radio" name="q8" id="radio8" value="1" ></label></th>
     </tr>
     
     <tr>
-   <th> <h4>Q9、私はひとりぼっちではないと思う。</h4></th>
+   <th> <h4>Q9、ひとりでいるよりも大勢で出かけるのが好きだ。</h4></th>
 　　<th><label><input type="radio" name="q9" id="radio9" value="5"> </label></th>
     <th><label><input type="radio" name="q9" id="radio9" value="3"checked></label></th>
     <th><label><input type="radio" name="q9" id="radio9" value="1" ></label></th>
@@ -82,7 +82,7 @@
     </tr>
     
     <tr>
-    <th><h4>Q11、結局、人間は、一人で生きていくことを運命づけられていると思う。</h4></th>
+    <th><h4>Q11、結局、人間は一人で生きていくことを運命づけられていると思う。</h4></th>
 　　<th><label><input type="radio" name="q11" id="radio11" value="20"> </label></th>
     <th><label><input type="radio" name="q11" id="radio11" value="10"checked></label></th>
     <th><label><input type="radio" name="q11" id="radio11" value="0" ></label></th>
