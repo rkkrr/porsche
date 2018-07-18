@@ -11,9 +11,12 @@
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
-Route::get('/', 'MainController@index');
+Route::get('a', 'MainController@index');
 Route::post('answer', 'MainController@store')->name('answer.store');
 
 //test pageにとぶ
@@ -21,3 +24,10 @@ Route::get('test', 'MainController@test')->name('test.take');
 
 Route::get('result', 'MainController@show')->name('result.get');
 
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login')->name('login.post');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
+
+// user registration
+Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
+Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');

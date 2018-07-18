@@ -8,6 +8,7 @@ use App\Result;
 
 class MainController extends Controller
 {
+   
     public function index(){
         
         
