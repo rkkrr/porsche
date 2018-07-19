@@ -114,10 +114,13 @@
     &nbsp;
     </tr>  
     </table>
+    
+    
    
 
   {!! Form::submit('あなたの孤独度は…！', ['class' => 'btn btn-primary btn-block']) !!}
   {!! Form::close() !!}
+  
 
 
 @endsection
