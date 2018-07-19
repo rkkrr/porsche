@@ -373,9 +373,6 @@
 <div class="text-center">
     <button class="btn btn-success btn-lg" type="submit">購入したい方はこちら！</button>
 </div>
-<div>
-    
-</div>
         <div class="text-center">
             <button class="btn btn-success btn-lg" type="submit">購入したい方はこちら！</button>
         </div>
