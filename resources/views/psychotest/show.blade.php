@@ -30,21 +30,9 @@
         
         <div class="text-center">
         <div class="picture">
-            <?php
-              if($result <= 25){ 
-                        print <img src='images/houou.png' style='width:250px;'>}
-                    else if($result <= 50){ 
-                        print <img src='images/ookami.png' style='width:250px;'>}
-                    else if($result <= 75){ 
-                        print <img src='images/deer image.jpg' style='width:250px;'>}
-                    else if($result <= 100){ 
-                        print <img src='images/sheep image.jpg' style='width:250px;'>}
-                    else ($result <= 120){ 
-                        print <img src='hamster.png' style='width:250px;'> }
-
-                        ?>
-            }
-                        
+           
+                        <img src='images/houou.png' style='width:250px;'>}
+                   
         </div>
         </div>
         
