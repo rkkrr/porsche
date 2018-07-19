@@ -6,10 +6,10 @@
         
     <tr>
    <th> <h4>いま何食べたい気分？</h4></th>
-    <th><label><input type="radio" name="food" id="radio1" value="1">中華 </label></th>
-    <th><label><input type="radio" name="food" id="radio1" value="2">イタリアン</label></th>
-    <th><label><input type="radio" name="food" id="radio1" value="3">和食</label></th>
-    <th><label><input type="radio" name="food" id="radio1" value="4" >飲み</label></th>
+    <th><label><input type="radio" name="food" id="radio13" value="1">中華 </label></th>
+    <th><label><input type="radio" name="food" id="radio13" value="2">イタリアン</label></th>
+    <th><label><input type="radio" name="food" id="radio13" value="3">和食</label></th>
+    <th><label><input type="radio" name="food" id="radio13" value="4" >飲み</label></th>
     </tr>
    
     </table>
