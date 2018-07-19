@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Food;
 
 class FoodController extends Controller
 {
@@ -13,7 +13,7 @@ class FoodController extends Controller
            'foodtype' => 'required',
            ]);
            
-            $data = new User;
+            $data = new Food;
             $data->foodtype = $request->foodtype;
             
             $data->save();

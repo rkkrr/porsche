@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'password', 'food',
+        'name', 'password',
     ];
 
     /**
@@ -26,6 +26,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function foodtype(){
+        return $this->belongsTo(Food::class);
+    }
     
 
 //     public function getData()
