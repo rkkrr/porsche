@@ -10,16 +10,16 @@
           <div class="animal"> 
               <div style="font-size:30pt;">
                 <?php
-                    if($result <= 20){ 
-                        print  'あなたはハムスタータイプです' . PHP_EOL; }
-                    else if($result <= 40){ 
-                        print  'あなたはひつじタイプです' . PHP_EOL; }
-                    else if($result <= 60){ 
-                        print  'あなたはこじかタイプです' . PHP_EOL; }
-                    else if($result <= 80){ 
+                    if($result <= 25){ 
+                        print  'あなたは鳳凰タイプです' . PHP_EOL; }
+                    else if($result <= 50){ 
                         print  'あなたはおおかみタイプです' . PHP_EOL; }
+                    else if($result <= 75){ 
+                        print  'あなたはこじかタイプです' . PHP_EOL; }
+                    else if($result <= 100){ 
+                        print  'あなたはひつじタイプです' . PHP_EOL; }
                     else ($result <= 120){ 
-                        print  'あなたは鳳凰タイプです' . PHP_EOL }
+                        print  'あなたはハムスタータイプです' . PHP_EOL }
                         ?>
                 </div>
             </div>
@@ -37,16 +37,16 @@
                             <div class="panel-body">
                                 <ul class="list-unstyled">
                                     <?php
-                                            if($result <= 20){ 
-                                                print  'あなたは、人一倍寂しがり屋さんのようです。ひまわりの種を握りしめ、おがくずにうずくまってしまうあなたは、寂しくても誰かに連絡を取れず一人で部屋に引きこもってしまうことも多いのは？' . PHP_EOL; }
-                                            elseif($result <= 40){
-                                                print  'あなたは、常に誰かといたいと思う寂しがり屋さんのようです。人の気を引きたくて、すぐにメェと鳴いてしまうのは、群れを作るために仲間が欲しいと思っているからかもしれません。' . PHP_EOL;  }
-                                            elseif($result <= 60){
-                                                print  'あなたは、人見知りタイプの寂しがり屋さんのようです。生まれたての小鹿のように足がプルプルしているシャイなあなたは、誰かに話しかけたいけれど話しかけるのに多くの勇気を必要としているようです。' . PHP_EOL;  }
-                                            elseif($result <= 80){
+                                            if($result <= 25){ 
+                                                print  'あなたは、周りからは完全無欠だと思われており、自分もそうでなければならないと思っているようです。何があってもめげず、常に堂々としているあなたは周りに元気を与える存在となっていますが、一人でため込んでしまう癖があるようです。' . PHP_EOL; }
+                                            elseif($result <= 50){
                                                 print  'あなたは、マイペースで一人でいるのが好きなように思われているようです。でも実は不器用で、一人でいるときにワオーンと鳴くことでしか寂しさを表現できないようです。' . PHP_EOL;  }
+                                            elseif($result <= 75){
+                                                print  'あなたは、人見知りタイプの寂しがり屋さんのようです。生まれたての小鹿のように足がプルプルしているシャイなあなたは、誰かに話しかけたいけれど話しかけるのに多くの勇気を必要としているようです。' . PHP_EOL;  }
+                                            elseif($result <= 100){
+                                                print 'あなたは、常に誰かといたいと思う寂しがり屋さんのようです。人の気を引きたくて、すぐにメェと鳴いてしまうのは、群れを作るために仲間が欲しいと思っているからかもしれません。'  . PHP_EOL;  }
                                             else{
-                                                print  'あなたは、周りからは完全無欠だと思われており、自分もそうでなければならないと思っているようです。何があってもめげず、常に堂々としているあなたは周りに元気を与える存在となっていますが、一人でため込んでしまう癖があるようです。' . PHP_EOL;}
+                                                print  'あなたは、人一倍寂しがり屋さんのようです。ひまわりの種を握りしめ、おがくずにうずくまってしまうあなたは、寂しくても誰かに連絡を取れず一人で部屋に引きこもってしまうことも多いのは？' . PHP_EOL;}
                                     ?>
                                 </ul>
                             </div>
@@ -64,8 +64,8 @@
                         <div class="panel-body">
                             <ul class="list-unstyled">
                                 <?php 
-                                //ハムスター
-                                    if($result <= 20){ 
+                                //鳳凰
+                                    if($result <= 25){ 
                                         if($content == 1){
                                 ?> 
                                 
@@ -85,8 +85,8 @@
                                             print "<br>";
                                             print "<font size = 3px>'仲間を失って一人ぼっちのおさかなが、海のさまざまないきものと出会ううちに、勇気をもって踏み出すことを学んでいくお話です。'  </font>". PHP_EOL;
                                     }}
-                                //ひつじ
-                                    elseif($result <= 40){
+                                //おおかみ
+                                    elseif($result <= 50){
                                         if($content == 1){
                                 ?>
                                 
@@ -107,7 +107,7 @@
                                             print "<font size = 3px>'世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓���本。'</font>". PHP_EOL;
                                     }}
                                 //こじか
-                                    elseif($result <= 60){
+                                    elseif($result <= 75){
                                         if($content == 1){
                                 ?>
                                 
@@ -127,8 +127,8 @@
                                             print "<br>";
                                             print "<font size = 3px>'可愛いワンちゃんに癒されながらも、ページをめくるたびに人生における大切なことを教えてくれる一冊です。'</font>". PHP_EOL;
                                     }}
-                                //おおかみ
-                                    elseif($result <= 80){
+                                //ひつじ
+                                    elseif($result <= 100){
                                         if($content == 1){
                                 ?>
                                 
@@ -148,7 +148,7 @@
                                             print "<br>";
                                             print "<font size = 3px>'世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓本。'</font>". PHP_EOL;
                                     }}
-                                //鳳凰
+                                //ハムスター
                                     else{
                                         if($content == 1){
                                 ?>
@@ -187,8 +187,8 @@
                         <div class="panel-body">
                             <ul class="list-unstyled">
                                 <?php 
-                                //ハムスター
-                                    if($result <= 20){ 
+                                //鳳凰
+                                    if($result <= 25){ 
                                         if($content == 1){
                                 ?> 
                                 
@@ -205,8 +205,8 @@
                                             print "<br>";
                                             print "<font size = 3px>'マリリン・モンロー'  </font>". PHP_EOL;
                                     }}
-                                 //ひつじ
-                                    elseif($result <= 40){
+                                 //おおかみ
+                                    elseif($result <= 50){
                                         if($content == 1){
                                 ?>
                                 <?php
@@ -221,7 +221,7 @@
                                             print "<font size = 3px>'スティーブ・ジョブズ'</font>". PHP_EOL;
                                     }}
                                 //こじか
-                                    elseif($result <= 60){
+                                    elseif($result <= 75){
                                         if($content == 1){
                                 ?>
                                 <?php
@@ -235,8 +235,8 @@
                                             print "<br>";
                                             print "<font size = 3px>'トーマス・エジソン'</font>". PHP_EOL;
                                     }}
-                                //おおかみ
-                                    elseif($result <= 80){
+                                //ひつじ
+                                    elseif($result <= 100){
                                         if($content == 1){
                                 ?>
                                 <?php
@@ -250,20 +250,20 @@
                                             print "<br>";
                                             print "<font size = 3px>'ゲーテ</font>". PHP_EOL;
                                     }}
-                                 //鳳凰
+                                 //ハムスター
                                     else{
                                         if($content == 1){
                                 ?>
                                 <?php
-                                            print  "<h2> '名言９'</h2>" . PHP_EOL; 
+                                            print  "<h2> '孤独な人ほど愛情が苦手。自分を守ろうとしないで、包み込むような愛情に身を任せてみては。'</h2>" . PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 3px>'名言言った人９'</font>" . PHP_EOL;}
+                                            print "<font size = 3px>'美輪明宏'</font>" . PHP_EOL;}
                                         else{
                                 ?>
                                 <?php 
-                                            print  "<h2> '名言１０' </h2>". PHP_EOL; 
+                                            print  "<h2> '自分の生きる人生を愛せ。自分の愛する人生を生きろ。' </h2>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 3px> '名言言った人１０'</font>" . PHP_EOL;}}
+                                            print "<font size = 3px> 'ボブ・マーリー'</font>" . PHP_EOL;}}
                                 ?>
                                 
                             </ul>
@@ -284,8 +284,8 @@
                         <div class="panel-body">
                             <ul class="list-unstyled">
                             <?php 
-                            //ハムスター
-                                if($result <= 20){ 
+                            //鳳凰
+                                if($result <= 25){ 
                                     if($content == 1){
                             ?> 
                             <?php 
@@ -297,25 +297,25 @@
                             <?php    
                                         print "<h2> 'アクアチューブ　クラゲ　小' </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>''  </font>". PHP_EOL;
+                                        print "<font size = 3px>'まるで小さな水族館。3匹のクラゲが優雅にゆらめく癒しのファンタジーアート'  </font>". PHP_EOL;
                                 }}
-                             //ひつじ
-                                elseif($result <= 40){
+                             //おおかみ
+                                elseif($result <= 50){
                                     if($content == 1){
                             ?>
                             <?php
-                                        print  "<h2> 'いやし３' </h2>"; 
+                                        print  "<h2> 'セラミックアロマランプハート' </h2>"; 
                                         print "<br>";
-                                        print "<font size = 3px> '商品説明３' </font>". PHP_EOL;} 
+                                        print "<font size = 3px> 'つややかな質感の陶器のレリーフから、やさしく温かみのある柔らかな灯りがこぼれるアロマランプ' </font>". PHP_EOL;} 
                                     else{
                             ?>
                             <?php   
-                                        print  "<h2> 'いやし４' </h2>". PHP_EOL; 
+                                        print  "<h2> 'プロジェクション　バスアロマ　YURA' </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>'商品説明４</font>". PHP_EOL;
+                                        print "<font size = 3px>'心地よいアロマの香りで素敵なバスタイムを。'</font>". PHP_EOL;
                                 }}
                             //こじか
-                                elseif($result <= 60){
+                                elseif($result <= 75){
                                     if($content == 1){
                             ?>
                             <?php
@@ -325,39 +325,39 @@
                                     else{
                             ?>
                             <?php   
-                                        print  "<h2> 'いやし６' </h2>". PHP_EOL; 
+                                        print  "<h2> '加湿器　7色に光るアロマディフューザー' </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>'商品説明６</font>". PHP_EOL;
+                                        print "<font size = 3px>'アロマの優しい香り広がる空間で心も体も癒されます。あなたの気分に合わせて光の色を調節できます。'</font>". PHP_EOL;
                                 }}
-                            //おおかみ
-                                elseif($result <= 80){
+                            //ひつじ
+                                elseif($result <= 100){
                                     if($content == 1){
                             ?>
                             <?php
-                                        print  "<h2> 'いやし７' </h2>"; 
+                                        print  "<h2> 'ビーズスライム' </h2>"; 
                                         print "<br>";
-                                        print "<font size = 3px> '商品説明７' </font>". PHP_EOL;} 
+                                        print "<font size = 3px> 'カラフルな丸いつぶつぶが入った、のびーるスライム。音フェチにはたまらない、つついたり混ぜるたびにプチプチ音がします♪' </font>". PHP_EOL;} 
                                     else{
                             ?>
                             <?php   
-                                        print  "<h2> 'いやし８' </h2>". PHP_EOL; 
+                                        print  "<h2> 'ファービー' </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>'商品説明８</font>". PHP_EOL;
+                                        print "<font size = 3px>'愛らしいファービーとの会話やふれあいを楽しみませんか？ファービーたちはあなたと遊べる日を待っています！'</font>". PHP_EOL;
                                 }}
-                             //鳳凰
+                             //ハムスター
                                 else{
                                     if($content == 1){
                             ?>
                             <?php
-                                        print  "<h2> 'いやし９'</h2>" . PHP_EOL; 
+                                        print  "<h2> 'リラックスバス　30点セット'</h2>" . PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>'商品説明９'</font>" . PHP_EOL;}
+                                        print "<font size = 3px>'忙しいあなたへ、温かいお風呂にゆっくり使って自分にご褒美をあげましょう。オススメ入浴剤がたっぷり30種類！'</font>" . PHP_EOL;}
                                     else{
                             ?>
                             <?php
-                                        print  "<h2> 'いやし１０' </h2>". PHP_EOL; 
+                                        print  "<h2> 'ハーブティーセット ブレンド ３点 セット お好み の ハーブティー 10包入' </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px> '商品説明１０'</font>" . PHP_EOL;}
+                                        print "<font size = 3px> 'ハーブティーでリラックス！美肌やデトックス、すっきり睡眠などの効果も見込めます。お好きなブレンドで日常をお茶でもっと豊かに♪ '</font>" . PHP_EOL;}
                                 }
                                        
                             ?>
