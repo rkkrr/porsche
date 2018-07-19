@@ -18,11 +18,16 @@ Route::get('/', function () {
 
 Route::get('a', 'MainController@index');
 Route::post('answer', 'MainController@store')->name('answer.store');
+Route::post('answer2', 'MainController@store2')->name('answer2.store2');
+
 
 //test pageにとぶ
 Route::get('test', 'MainController@test')->name('test.take');
 
 Route::get('result', 'MainController@show')->name('result.get');
+
+//test2 page にとぶ
+Route::get('test2', 'MainController@test2')->name('test2.take2');
 
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
