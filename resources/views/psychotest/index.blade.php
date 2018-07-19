@@ -11,7 +11,7 @@
         <div class="jumbotron">
             <div class="text-center">
                 <div class="text-center">
-                    <div class="btn btn-lg btn-warning">
+                    <div class="btn btn-warning btn-lg">
                         <a href="test">一人で過ごしたいあなたはこちら！！</a>
                     </div>     
                 </div>
