@@ -118,7 +118,7 @@
     
    
 
-  {!! Form::submit('あなたの孤独度は…！', ['class' => 'btn btn-primary btn-block']) !!}
+  {!! Form::submit('あなたの孤独度は…！', ['class' => 'btn btn-warning btn-block']) !!}
   {!! Form::close() !!}
   
 
