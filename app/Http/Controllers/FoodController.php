@@ -10,11 +10,11 @@ class FoodController extends Controller
      
     public function food_store(Request $request){
            $this->validate($request, [
-           'food' => 'required',
+           'foodtype' => 'required',
            ]);
            
             $data = new User;
-            $data->food = $request->food;
+            $data->foodtype = $request->foodtype;
             
             $data->save();
 
