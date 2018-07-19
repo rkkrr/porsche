@@ -29,7 +29,7 @@
         </div>
         <br>
         <div class="row">
-        <div class="container-fluid">
+        <div class="d-block">
         <div class="result">
             <div class="d-block col-sm-offset-1 col-sm-5"> 
                 <div class="panel panel-info">
@@ -131,7 +131,7 @@
                                      
                                             <br><span class="glyphicon glyphicon-book" style="font-size: 40px"></span></br>
                                 <?php   
-                                            print  "<h2> 『人生はワンチャンス！「仕事」も「遊び」も楽しくなる65の方法』 </h2>". PHP_EOL; 
+                                            print  "<h2> 『人生はワンチャンス！』 </h2>". PHP_EOL; 
                                             print "<br>";
                                             print "<font size = 4px>可愛いワンちゃんに癒されながらも、ページをめくるたびに人生における大切なことを教えてくれる一冊です。</font>". PHP_EOL;
                                     }}
@@ -152,7 +152,7 @@
                                      
                                             <br><span class="glyphicon glyphicon-book" style="font-size: 40px"></span></br>
                                 <?php   
-                                            print  "<h2> 『365日世界一周　絶景の旅（365日絶景シリーズ）』 </h2>". PHP_EOL; 
+                                            print  "<h2> 『365日世界一周絶景の旅』 </h2>". PHP_EOL; 
                                             print "<br>";
                                             print "<font size = 4px>365日、毎日世界中の絶景スポットに行ったような気分になれる一冊です。</font>". PHP_EOL;
                                     }}
@@ -210,7 +210,7 @@
                             ?>
                               <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php    
-                                        print "<h2> 【アクアチューブ　クラゲ小】 </h2>". PHP_EOL; 
+                                        print "<h2> 【アクアチューブ　クラゲ】 </h2>". PHP_EOL; 
                                         print "<br>";
                                         print "<font size = 4px>まるで小さな水族館。3匹のクラゲが優雅にゆらめく癒しのファンタジーアート  </font>". PHP_EOL;
                                 }}
@@ -218,14 +218,16 @@
                                 elseif($result <= 50){
                                     if($content == 1){
                             ?>
+                            <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php
-                                        print  "<h2> 【セラミックアロマランプハート】 </h2>"; 
+                                        print  "<h2> 【セラミックアロマランプ】 </h2>"; 
                                         print "<br>";
                                         print "<font size = 3px> つややかな質感の陶器のレリーフから、やさしく温かみのある柔らかな灯りがこぼれるアロマランプ </font>". PHP_EOL;} 
                                     else{
                             ?>
+                            <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php   
-                                        print  "<h2> 【プロジェクション　バスアロマ　YURA】 </h2>". PHP_EOL; 
+                                        print  "<h2> 【バスアロマ　YURA】 </h2>". PHP_EOL; 
                                         print "<br>";
                                         print "<font size = 3px>心地よいアロマの香りで素敵なバスタイムを。</font>". PHP_EOL;
                                 }}
@@ -233,27 +235,31 @@
                                 elseif($result <= 75){
                                     if($content == 1){
                             ?>
+                            <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php
                                         print  "<h2> 【美睡眠　あしまくら】 </h2>"; 
                                         print "<br>";
                                         print "<font size = 3px> 脚にもまくらを。あなたの脚の形にフィットしてくれるカーブ形状、脚用まくらです！</font>". PHP_EOL;} 
                                     else{
                             ?>
+                            <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php   
-                                        print  "<h2> 【加湿器　7色に光るアロマディフューザー】 </h2>". PHP_EOL; 
+                                        print  "<h2> 【光るアロマディフューザー】 </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>アロマの優しい香り広がる空間で心も体も癒されます。あなたの気分に合わせて光の色を調節できます。</font>". PHP_EOL;
+                                        print "<font size = 3px>アロマの優しい香り広がる空間で心も体も癒されます。あなたの気分に合わせて7色から光の色を調節できます。</font>". PHP_EOL;
                                 }}
                             //ひつじ
                                 elseif($result <= 100){
                                     if($content == 1){
                             ?>
+                            <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php
                                         print  "<h2> 【ビーズスライム】 </h2>"; 
                                         print "<br>";
                                         print "<font size = 3px> カラフルな丸いつぶつぶが入った、のびーるスライム。音フェチにはたまらない、つついたり混ぜるたびにプチプチ音がします♪ </font>". PHP_EOL;} 
                                     else{
                             ?>
+                            <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php   
                                         print  "<h2> 【ファービー】 </h2>". PHP_EOL; 
                                         print "<br>";
@@ -263,14 +269,16 @@
                                 else{
                                     if($content == 1){
                             ?>
+                            <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php
-                                        print  "<h2> 【リラックスバス　30点セット】</h2>" . PHP_EOL; 
+                                        print  "<h2> 【リラックスバスセット】</h2>" . PHP_EOL; 
                                         print "<br>";
                                         print "<font size = 3px>忙しいあなたへ、温かいお風呂にゆっくり使って自分にご褒美をあげましょう。オススメ入浴剤がたっぷり30種類！</font>" . PHP_EOL;}
                                     else{
                             ?>
+                            <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php
-                                        print  "<h2> 【ハーブティーセット ブレンド ３点 セット お好み の ハーブティー 10包入】 </h2>". PHP_EOL; 
+                                        print  "<h2> 【ハーブティーセット】 </h2>". PHP_EOL; 
                                         print "<br>";
                                         print "<font size = 3px> ハーブティーでリラックス！美肌やデトックス、すっきり睡眠などの効果も見込めます。お好きなブレンドで日常をお茶でもっと豊かに♪ </font>" . PHP_EOL;}
                                 }
