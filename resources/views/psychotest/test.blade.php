@@ -4,10 +4,10 @@
 {!! Form::open(['route' => 'answer.store']) !!}
   <table class="table table-hover">
     <tr>
-    <th><h4><label>質問項目 </label></h4></th>
-    <th><label>とても感じる </label></th>
-    <th><label>どちらともいえない </label></th>
-    <th><label>全く感じない</label></th>
+    <th class="warning"><h4><label>質問項目 </label></h4></th>
+    <th class="warning"><label>とても感じる </label></th>
+    <th class="warning"><label>どちらともいえない </label></th>
+    <th class="warning"><label>全く感じない</label></th>
     </tr>
         
     </tr>
@@ -87,17 +87,24 @@
     <th><label><input type="radio" name="q11" id="radio11" value="10"checked></label></th>
     <th><label><input type="radio" name="q11" id="radio11" value="0" ></label></th>
     </tr>
+    
+     <tr>
+    <th><h4><label> </label></h4></th>
+    <th><label>とても感じる </label></th>
+    <th><label>どちらともいえない </label></th>
+    <th><label>全く感じない</label></th>
+    </tr>
+    <th><h4><label></label></h4></th>
     <tr>
     &nbsp;
     </tr>  
     
      <tr>
-    <th><h4><label> </label></h4></th>
-    <th><label> </label></th>
-    <th><h4><label>映画 </label></h4></th>
-    <th><label> </label></th>
-    <th><h4><label>本</label></h4></th>
-    <th><label></label></th>
+    <th class="warning"><h4><label> </label></h4></th>
+    <th class="warning"><label> </label></th>
+    <th class="warning"><h4><label>映画 </label></h4></th>
+    <th class="warning"><h4><label>本</label></h4></th>
+    <th class="warning"><label></label></th>
     </tr>
         
     
@@ -105,11 +112,9 @@
      <th><h4>Q12、あなたは映画と本ならどちらが好きですか？</h4></th>
      <th><label> </label></th>
      <th><label><input type="radio" name="q12" id="radio12" value="1"></label></th>
-     <th><label> </label></th>
      <th><label><input type="radio" name="q12" id="radio12" value="2"></label></th>
      <th><label> </label></th>
     </tr>
-    
      <tr>
     &nbsp;
     </tr>  
