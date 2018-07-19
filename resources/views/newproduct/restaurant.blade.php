@@ -1,8 +1,10 @@
 @extends('layouts.app')
-        <div class="text-center">
-        <h1>あなたと同じことしたい同期は・・・？</h1>
+
 @section('content')
+
 <div class="container">
+            <div class="text-center">
+        <h1>あなたと同じことしたい同期は・・・？</h1>
      
 <div class="result">
     <h2>そんなあなたへのオススメ</h2>

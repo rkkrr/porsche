@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-{!! Form::open(['route' => 'test2.take2']) !!}
+{!! Form::open(['route' => 'answer2.store2']) !!}
   <table class="table table-hover">
         
     <tr>
