@@ -1,9 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{ secure_asset('css/result.css') }}">
 @extends('layouts.app')
-    <!--<div class="opaque-background" style="background:url(images/children.jpg)" "background-size:cover">-->
+
 
 @section('content')
-     
 
+     
     <div class="text-center">
         <h1>結果</h1>
            
@@ -58,6 +61,7 @@
                     </div>
                 </div>
             </div>
+            
         <div class="d-block  col-sm-offset-1 col-sm-5">
             <div class="panel panel-info">
                 <div class="panel-heading">
@@ -298,8 +302,7 @@
                                     if($result <= 25){ 
                                         if($content == 1){
                                 ?> 
-                                
-                                           
+
                                 
                                 <?php 
                                             print "<h3> 'みんな自分の能力を疑いすぎるのです。自分で自分を疑っていては、最善を尽くすことなんてできないんです。自分が信じなかったとしたら、誰が信じてくれるのでしょう？'</h3>" ;
@@ -385,3 +388,4 @@
     
     </div>
 @endsection
+</html>

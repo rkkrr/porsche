@@ -1,13 +1,29 @@
-.container
-
-.recomendation{}
-
 .opaque-background {
     background: rgba(255,255,255,0.5);
      background-position: center center;
      background-repeat: no-repeat;
      background-size: cover;
-     height: 100vh;
-
-
+     height: 100px;
 }
+
+
+/*//bootstrap navbar*/
+.navbar {
+  background-color: #FF5733;
+  min-height: 60px !important;
+  border:none;
+}
+.navbar .navbar-brand {
+　background: url("images/navbar.jpg") no-repeat left center;
+  background-size: contain;
+  height: 40px;
+  width: 250px;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 6px;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #12406B;
+}
+
