@@ -12,8 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('welcome');});
 
 
 Route::get('/home', 'MainController@index');
@@ -36,4 +35,8 @@ Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
 
 //test2 page にとぶ
 Route::get('test2', 'MainController@test2')->name('test2.take2');
+
+//選ばれた食べ物を保存する
+Route::post('food', 'FoodController@food_store')->name('food.store');
+// Route::get('food', )
 
