@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateResultsTable extends Migration
+class AddQ12ToResultsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateResultsTable extends Migration
      */
     public function up()
     {
-        Schema::create('results', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('q1');
-            $table->timestamps();
+        Schema::table('results', function (Blueprint $table) {
+            $table->integer('q12');
         });
     }
 
@@ -27,6 +25,8 @@ class CreateResultsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('results');
+        Schema::table('results', function (Blueprint $table) {
+             $table->dropColumn('q12');
+        });
     }
 }

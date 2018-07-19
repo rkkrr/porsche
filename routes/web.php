@@ -11,11 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('test', 'MainController@index');
 
-//show pageにとぶ
+Route::get('/', 'MainController@index');
+Route::post('answer', 'MainController@store')->name('answer.store');
+
+//test pageにとぶ
+Route::get('test', 'MainController@test')->name('test.take');
+
 Route::get('result', 'MainController@show')->name('result.get');
+

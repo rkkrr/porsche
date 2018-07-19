@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-       
+        
+          <div class="center background">
+              <img src='images/panda1.jpg' style='width:1140px;'>
+          </div>
         <div class="center jumbotron">
+            
             <div class="text-center">
-                <h1>ひとりぼっちのみなさん、こんにちは。</h1>
+                
+                <h1>こんにちは。</h1>
             
             </div>
             
@@ -12,7 +17,9 @@
         
         <div class="text-center">
          <div class = btn btn-lg btn-primary >
-            <a href="result">結果は！！</a>
+             <div style="font-size:15pt;">
+            <a href="test">テストを受ける！</a>
+         </div>   
          </div>     
         </div>
 @endsection
