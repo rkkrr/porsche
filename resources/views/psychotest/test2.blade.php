@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="{{ secure_asset('css/result.css') }}">
 
 @section('content')
 {!! Form::open(['route' => 'answer2.store2']) !!}
