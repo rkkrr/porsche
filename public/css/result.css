@@ -1,8 +1,19 @@
-.division {
-    width:300px;
-    margin:30px;
-    float:left;
-    height:200px;
-    background-color: #ff0;
+table {
+  text-align: center;
+  border-collapse: collapse;
+  border: solid 2px orange;/*表全体を線で囲う*/
+  width: 100%
 }
+
+.panel-body img { 
+    width: 100%; 
+} 
+
+/*.division {*/
+/*        width:300px;*/
+/*    margin:30px;*/
+/*    float:left;*/
+/*    height:200px;*/
+/*    background-color: #ff0;*/
+/*}*/
 

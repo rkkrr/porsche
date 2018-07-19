@@ -1,11 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
- <div class="text-center">
-        <img src="images/panda1.jpg" width="700px;">
-{!! Form::open(['route' => 'answer2.store2']) !!}
-=======
 {!! Form::open(['route' => 'food.store']) !!}
   <table class="table table-hover">
         
@@ -16,7 +11,6 @@
     <th><label><input type="radio" name="food" id="radio13" value="3">和食</label></th>
     <th><label><input type="radio" name="food" id="radio13" value="4" >飲み</label></th>
     </tr>
->>>>>>> cad52ad704b0758cdb0468f2205f23509dbe398c
    
     <br><div style="font-size:20pt; display:inline-block;">いま何食べたい気分？</div>
    
