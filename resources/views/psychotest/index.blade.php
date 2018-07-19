@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <br>
 <br>
     <div class="d-block col-sm-offset-1 col-sm-5"> 

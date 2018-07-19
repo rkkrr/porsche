@@ -14,10 +14,6 @@
   border:none;
 }
 .navbar .navbar-brand {
-　background: url("images/navbar.jpg") no-repeat left center;
-  background-size: contain;
-  height: 40px;
-  width: 250px;
   color: #ffffff;
   font-size: 22px;
   letter-spacing: 6px;
