@@ -15,9 +15,15 @@ class CreateFoodsTable extends Migration
     {
         Schema::create('foods', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
-            $table->integer('foodtype');
+            $table->integer('user_id')->unsigned();
+            $table->integer('foodtype')->unsigned();
             $table->timestamps();
+            
+           // Foreign key constraint
+           $table->foreign('user_id')->references('id')->on('users');
+            
+           // Do not allow duplication of combination of user_id and foodtype
+            $table->unique(['user_id','foodtype']);
         });
     }
 
