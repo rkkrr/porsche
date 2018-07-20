@@ -9,7 +9,7 @@ class Food extends Model
 {
     protected $fillable = ['foodtype', 'user_id'];
     
-    public function users(){
+    public function user(){
         return $this->hasMany(User::class);
     }
 }
