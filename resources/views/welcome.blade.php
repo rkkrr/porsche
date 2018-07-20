@@ -2,8 +2,11 @@
 
 @section('content')
  @if (Auth::check())
-        <?php $user = Auth::user(); ?>
-        {{ $user->name }}
+        <?php 
+        $user = Auth::user(); 
+        return view ('/home');
+        ?>
+        
     @else
     
         <div class="text-center">
