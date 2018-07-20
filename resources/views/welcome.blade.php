@@ -7,8 +7,9 @@
     @else
     
         <div class="text-center">
-            <h1>Welcome to the Porsche and I hope this group won't have any conflicts.</h1>
-            {!! link_to_route('signup.get', '新規登録', null, ['class' => 'btn btn-lg btn-primary']) !!}
+            <h1></h1>
+            {!! link_to_route('signup.get', 'はじめての方はこちら', null, ['class' => 'btn btn-lg btn-primary']) !!}
+            {!! link_to_route('login.post', 'ログイン', null, ['class' => 'btn btn-lg btn-primary']) !!}
         </div>
     @endif
 @endsection

@@ -34,16 +34,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" ><strong>PORSCHE</strong></a>
+                <a class="navbar-brand" href="/" ><strong>PORSCHE</strong></a>
             </div>
             
-            
-            
-                   <ul class="nav navbar-nav navbar-right">
-
-                        <li>{!! link_to_route('signup.get', '新規登録') !!}</li>
-                        <li>{!! link_to_route('login', 'ログイン') !!}</li>
-                    </ul>
                     @endif
                 </ul>
             </div>
