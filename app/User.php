@@ -28,10 +28,11 @@ class User extends Authenticatable
     ];
     
     public function foodtype(){
-        return $this->belongsTo(Food::class);
-    }
+        return $this->hasOne(Food::class);}
+        
     
-
+    
+}
 //     public function getData()
 //   {
 //     $data = DB::table($this->table)->get();
@@ -41,4 +42,4 @@ class User extends Authenticatable
 
     
     
-}
+

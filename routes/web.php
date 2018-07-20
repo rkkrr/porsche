@@ -38,5 +38,6 @@ Route::get('test2', 'MainController@test2')->name('test2.take2');
 
 //選ばれた食べ物を保存する
 Route::post('food', 'FoodController@food_store')->name('food.store');
+Route::get('answer2','FoodController@show')->name('food.show');
 // Route::get('food', )
 
