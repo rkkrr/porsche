@@ -9,6 +9,9 @@ class FoodController extends Controller
 {
      
     public function food_store(Request $request){
+        
+        return var_dump($request);
+        exit;
            $this->validate($request, [
            'foodtype' => 'required',
            ]);
