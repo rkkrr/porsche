@@ -7,7 +7,6 @@ use App\Food;
 
 class FoodController extends Controller
 {
-     
     public function food_store(Request $request){
            $this->validate($request, [
            'foodtype' => 'required',
@@ -19,6 +18,6 @@ class FoodController extends Controller
             $data->save();
             $results = $this->score($data);
 
-             return view ('newproduct.restaurant');
+             return view ('newproduct.restaurant' , ['results' => $results,]);
  }
 }
