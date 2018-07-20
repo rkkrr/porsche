@@ -18,6 +18,6 @@ class FoodController extends Controller
             
             $data->save();
 
-            return redirect()->back();
+            return view('newproduct.restaurant');
  }
 }
