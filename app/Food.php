@@ -10,6 +10,19 @@ class Food extends Model
     protected $fillable = ['foodtype', 'user_id'];
     
     public function user(){
-        return $this->hasMany(User::class);
+        return $this->belongsTo(User::class);
     }
+    
+    public function doukis(){   
+        
+        $data = [];
+  
+        $foodtype = $data->foodtype;
+       
+        $data = DB::table('foods')->pluck('foodtype')->get();
+        $data = [
+            'foodtype' => $foodtype,
+        ];
+    }
+    
 }

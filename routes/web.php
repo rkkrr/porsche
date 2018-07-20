@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/home', 'MainController@index');
 Route::post('answer', 'MainController@store')->name('answer.store');
-Route::post('answer2', 'MainController@store2')->name('answer2.store2k');
+Route::get('answer2', 'MainController@store2')->name('answer2.store2');
 
 
 //test pageにとぶ
@@ -38,5 +38,6 @@ Route::get('test2', 'MainController@test2')->name('test2.take2');
 
 //選ばれた食べ物を保存する
 Route::post('food', 'FoodController@food_store')->name('food.store');
+Route::get('answer2','FoodController@show')->name('food.show');
 // Route::get('food', )
 
