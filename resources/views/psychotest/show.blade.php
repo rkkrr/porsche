@@ -8,7 +8,7 @@
 
      
     <div class="text-center">
-        <h1>結果</h1>
+        <h1> 結果 </h1>
            
           <div class="animal"> 
               <div style="font-size:30pt;">
