@@ -13,16 +13,16 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/home"><strong>PORSCHE</strong></a>
-            
+        
+               </div>
                 <ul class="nav navbar-nav navbar-right">
                         <li><a href="test">ひとりで</a></li>
                         <li><a href="test2">みんなで</a></li>
                         <li><a href="home">トップページへ</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
-                            </ul>
-                            
-                    　</div>
+                        <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
+                </ul>
+                
+                        
                    
                    
                    
@@ -36,6 +36,9 @@
                 </button>
                 <a class="navbar-brand" ><strong>PORSCHE</strong></a>
             </div>
+            
+            
+            
                    <ul class="nav navbar-nav navbar-right">
 
                         <li>{!! link_to_route('signup.get', '新規登録') !!}</li>
