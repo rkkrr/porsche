@@ -17,7 +17,8 @@ class FoodController extends Controller
             $data->foodtype = $request->foodtype;
             
             $data->save();
+            $results = $this->score($data);
 
-            return redirect()->back();
+             return view ('newproduct.restaurant');
  }
 }
