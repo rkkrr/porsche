@@ -4,15 +4,17 @@ body {
     background-repeat: no-repeat;
     
 }
-.wrapper {
-  position: relative;
-  height: 800px;
+
+.button1 {
+        background:url(/button.png) no-repeat;
+        width:500px;
+        height:40px;
+        margin:150px 30px 10px 30px;
 }
-.inside {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+
+.button2 {
+        background:url(/.png) no-repeat;
+        width:240px;
+        height:40px;
+        margin:150px 30px 10px 30px;
 }

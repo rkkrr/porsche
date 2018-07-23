@@ -49,8 +49,8 @@
             crossorigin="anonymous"></script>
     <body>
         <a class="btn" href="#">
-            <span>誘う</span>
-            <span>リクエスト済み</span>
+            <span><strong>誘う</strong></span>
+            <span><strong>リクエスト済み</strong></span>
         </a>
     </body>
 </html>

@@ -1,16 +1,33 @@
 table {
   text-align: center;
   border-collapse: collapse;
-  border: solid 2px orange;/*表全体を線で囲う*/
-  width: 100%
+  border: solid 2px #FFBC6F;
+  background-color: rgba(255,255,255,0.8);
 }
+
+body {
+  font-family: 'Meiryo', 'MS PGothic', 'MS Gothic';
+  background-image: url("#");
+}
+.blank_row
+{
+    height: 30px !important; /* overwrites any other rules */
+}
+.textt {
+  font-size: 18px;
+}
+
+tr {
+    border: none;
+}
+
 
 .panel-body img { 
     width: 100%; 
 } 
 
 .background {
-  background-image: url("../images/background/nightocean.jpg");
+  background-image: url("#");
   
     /* 画像を常に天地左右の中央に配置 */
   background-position: center center;
@@ -33,7 +50,7 @@ table {
 
 .transparent {
   height: 100%;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.9);
   }
 /*.division {*/
 /*        width:300px;*/
@@ -43,3 +60,32 @@ table {
 /*    background-color: #ff0;*/
 /*}*/
 
+
+
+/* Style the header */
+.header {
+  padding: 10px 16px;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.blank {
+  display: block;
+  height: 500px;
+  position: fixed;
+}
