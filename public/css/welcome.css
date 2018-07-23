@@ -1,0 +1,18 @@
+body {
+    background-image: url("../images/reirei image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.wrapper {
+  position: relative;
+  height: 800px;
+}
+.inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
