@@ -329,7 +329,7 @@
             
             
             
-             <div class="d-block  col-sm-offset-1 col-sm-5">
+        <div class="d-block  col-sm-offset-1 col-sm-5">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h2 class="panel-title">あなたへ贈る名言</h2>
@@ -423,10 +423,7 @@
                 </div>
             </div>
         </div>
-            
-            
-            <!--<button class="btn btn-success btn-lg" type="submit">購入したい方はこちら！</button>-->
-    
+        <a class="btn btn-primary" href="{{ route("test2.take2") }}" role="button">Link</a>    
     </div>
 @endsection
 </html>
