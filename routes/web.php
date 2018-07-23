@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');});
 
 
-Route::get('/home', 'MainController@index');
+Route::get('/home', 'MainController@index')->name('psychotest.home');
 Route::post('answer', 'MainController@store')->name('answer.store');
+<<<<<<< HEAD
+=======
+
+>>>>>>> cc8115ae234afc4dff6c679c0aedb77dfcbb257b
 
 
 //test pageにとぶ
@@ -39,4 +43,5 @@ Route::get('test2', 'MainController@test2')->name('test2.take2');
 Route::post('food', 'FoodController@food_store')->name('food.store');
 Route::get('answer2','FoodController@show')->name('food.show');
 // Route::get('food', )
+
 
