@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="{{ secure_asset('css/result.css') }}">
-
 @extends('layouts.app')
 
 @section('content')
-
-<div class = "background">
-<div class = "transparent">
 {!! Form::open(['route' => 'answer.store']) !!}
   <table class="table table-hover">
     <tr>
@@ -134,9 +127,6 @@
   {!! Form::close() !!}
 <br>
 <br>
-</div>
-</div>
 
 
 @endsection
-</html>
