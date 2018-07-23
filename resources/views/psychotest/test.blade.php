@@ -12,7 +12,7 @@
         <th class="warning" colspan="1"></th>
     </tr>
         
-    <tr>ww
+    <tr>
         <th><h4>Q1.誰かが自分の生き方を理解してくれると思う。</h4></th>
         <td><label><input type="radio" name="q1" id="radio1" value="0"> </label></td>
         <td><label><input type="radio" name="q1" id="radio1" value="10"checked></label></td>
