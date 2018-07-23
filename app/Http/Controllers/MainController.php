@@ -68,6 +68,7 @@ class MainController extends Controller
         
         $result = $this->score($data);
         
+        
         $content =  $data->q12;
         
        return view ('psychotest.show', ['result' => $result, 'content'=>$content]);

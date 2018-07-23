@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFoodsTable extends Migration
+class CreateUsersFoodsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,15 @@ class CreateFoodsTable extends Migration
      */
     public function up()
     {
-        Schema::create('foods', function (Blueprint $table) {
+        Schema::create('users_foods', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('id_in_users')->unsigned();
             $table->integer('user_id')->unsigned();
-            $table->integer('foodtype')->unsigned();
             $table->timestamps();
             
-           // Foreign key constraint
-           $table->foreign('user_id')->references('id')->on('users');
-            
-           // Do not allow duplication of combination of user_id and foodtype
-            $table->unique(['user_id','foodtype']);
+             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+             
+             $table->unique(['user_id', 'id']);
         });
     }
 
@@ -34,6 +32,6 @@ class CreateFoodsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('foods');
+        Schema::dropIfExists('users_foods');
     }
 }
