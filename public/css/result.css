@@ -79,3 +79,8 @@ body {
   padding-top: 102px;
 }
 
+.blank {
+  display: block;
+  height: 500px;
+  position: fixed;
+}

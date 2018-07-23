@@ -10,7 +10,7 @@
 
 <div class="container">
             <div class="text-center">
-        <h1>あなたと同じことしたい同期は・・・？</h1>
+        <h1>あなたと同じものを食べたい同期は・・・？</h1>
        
         <table border="1">
         <tr>
