@@ -34,7 +34,7 @@
         </div>
             <div class="panel-body">
                  <?php
-                    $results = 0;
+                    $results = $data->foodtype;
                     $restaurant = rand(1,3);
                     if($results == 0){
                         if($restaurant == 1){?>
@@ -101,6 +101,7 @@
         </div>
             <div class="panel-body">
                 <?php
+                
                     $results = $data->foodtype;
                     $recipe = rand(1,3);
                     if($results == 0){
