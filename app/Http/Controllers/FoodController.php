@@ -8,24 +8,7 @@ use App\Food;
 
 class FoodController extends Controller
 {
-    public function show(){
-        
-     $data = [];
-     
-        $user = \Auth::user();
-        $user = User::find($id);
-        $foodtype = $user->foodtype()->orderBy('created_at', 'desc')->paginate(10);
-
-        $data = [
-            'user' => $user,
-            'foodtype' => $foodtype,
-        ];
-
-        $data += $this->counts($user);
-
-        return view('#', $data);
-        
-    }
+ 
      
      
      
@@ -38,22 +21,12 @@ class FoodController extends Controller
             $data = new Food;
             $data->foodtype = $request->age;
             
-<<<<<<< HEAD
-            
             $data->user_id = \Auth::user()->id;
             
-           
            $data->save();
             
-           return view('newproduct.restaurant');
+           return view('newproduct.restaurant', [$data]);
             
-              
-=======
-            $data->save();
-            $results = $this->score($data);
-
-             return view ('newproduct.restaurant');
->>>>>>> 81c151c1ee0b67d4a6ebfabc763e34b315b3c78a
  }
  
  
