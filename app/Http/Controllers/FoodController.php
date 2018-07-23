@@ -8,10 +8,13 @@ use App\Food;
 
 class FoodController extends Controller
 {
+<<<<<<< HEAD
  
      
      
      
+=======
+>>>>>>> bd7d08c668a39473f883b5cd3742872d952b80a3
     public function food_store(Request $request){
 
            $this->validate($request, [
@@ -27,6 +30,13 @@ class FoodController extends Controller
             
            return view('newproduct.restaurant', [$data]);
             
+<<<<<<< HEAD
+=======
+            $data->save();
+            $results = $this->score($data);
+
+             return view ('newproduct.restaurant' , ['results' => $results,]);
+>>>>>>> bd7d08c668a39473f883b5cd3742872d952b80a3
  }
  
  

@@ -54,10 +54,7 @@
             </div>
         </div>
         
-        <div class="text-center">
-        <div class="picture">
-           
-                        <img src='images/houou.png' style='width:250px;'>
+                       
                    
         </div>
         </div>

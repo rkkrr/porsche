@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="{{ secure_asset('css/result.css') }}">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
 @extends('layouts.app')
 
 @section('content')
@@ -16,7 +19,7 @@
         </tr>
         <tr>
         <th>&nbsp;</th>
-        <th>なつひこ @include('commons.invite_button')</th>
+        <th>なつひこ     @include('commons.invite_button')  </th>
         </tr>
         </table>
 <br>
@@ -139,7 +142,7 @@
                         }}
                          ?>
             </div>
-        </div>
+             </div>
     </div>
 </div>
 <?php
