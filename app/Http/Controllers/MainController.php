@@ -88,10 +88,6 @@ class MainController extends Controller
     } 
     
    public function store2(){
-        
         return view ('newproduct.restaurant');
-        
     }
-
 }
-

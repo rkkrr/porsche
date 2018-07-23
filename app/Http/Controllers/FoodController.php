@@ -28,7 +28,6 @@ class FoodController extends Controller
     }
      
      
-     
     public function food_store(Request $request){
 
            $this->validate($request, [
@@ -46,7 +45,7 @@ class FoodController extends Controller
             
            return view('newproduct.restaurant');
             
-              
+
  }
  
  
