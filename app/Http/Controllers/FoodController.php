@@ -25,20 +25,18 @@ class FoodController extends Controller
         
     public function show(){
         
-        
-        $users = DB::table('foods')
-           ->join('users', function($join ){
-               $join->on('foods.user_id', '=', 'users.id')
-           ->select('foods.foodtype', 'users.name')
-           ->where('foodtype', '$age')
-           ->value('name')
-           ->inRandomOrder()
-           ->first();})
-           ->get();
-           
-        
-           
-           return view('newproduct.restaurant',['users'=>$users]);
+        $data = Food::where('user_id',\Auth::user()->id)
+              ->first();
+              
+              
+        $foods=Food::where('foodtype',$data->foodtype)
+              ->inRandomOrder()
+              ->take(3)
+              ->get();
+         
+          
+         return view('newproduct.restaurant',['foods'=>$foods]);     
+              
            
     }
 }

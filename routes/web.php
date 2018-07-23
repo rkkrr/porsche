@@ -17,10 +17,6 @@ Route::get('/', function () {
 
 Route::get('/home', 'MainController@index')->name('psychotest.home');
 Route::post('answer', 'MainController@store')->name('answer.store');
-<<<<<<< HEAD
-=======
-
->>>>>>> cc8115ae234afc4dff6c679c0aedb77dfcbb257b
 
 
 //test pageにとぶ

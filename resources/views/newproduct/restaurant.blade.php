@@ -19,7 +19,13 @@
         </tr>
         <tr>
         <th>&nbsp;</th>
-        <th> <a href="{{ action('FoodController@show', $users) }}"></a>    @include('commons.invite_button')  </th>
+        <th>
+    @foreach ($foods as $food)
+    
+         {{$food->user->name}}    @include('commons.invite_button') 
+        
+    @endforeach 
+        </th>
         </tr>
         </table>
 <br>
