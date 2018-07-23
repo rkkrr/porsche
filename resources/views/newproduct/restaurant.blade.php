@@ -19,7 +19,7 @@
         </tr>
         <tr>
         <th>&nbsp;</th>
-        <th>なつひこ     @include('commons.invite_button')  </th>
+        <th> <a href="{{ action('FoodController@show', $users) }}"></a>    @include('commons.invite_button')  </th>
         </tr>
         </table>
 <br>
