@@ -5,6 +5,11 @@ table {
   width: 100%
 }
 
+tr {
+    border: none;
+}
+
+
 .panel-body img { 
     width: 100%; 
 } 
