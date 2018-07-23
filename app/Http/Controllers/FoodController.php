@@ -22,7 +22,7 @@ class FoodController extends Controller
             
            $data->save();
             
-           return view('newproduct.restaurant', [$data]);
+           return view('newproduct.restaurant', ['data' => $data]);
             
 
  }

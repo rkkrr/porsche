@@ -14,8 +14,8 @@
             width: 150px;
             height: 32px;
             line-height: 32px;
-            background-color: #3692ff;
-            color: #fff;
+            background-color: #EF858C;
+            color: #FFF;
             text-align: center;
         }
  

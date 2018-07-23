@@ -5,8 +5,7 @@
 
 
 @section('content')
-
-     
+ 
     <div class="text-center">
         <h1> 結果 </h1>
            
