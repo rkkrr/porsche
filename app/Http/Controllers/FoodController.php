@@ -38,6 +38,7 @@ class FoodController extends Controller
             $data = new Food;
             $data->foodtype = $request->age;
             
+<<<<<<< HEAD
             
             $data->user_id = \Auth::user()->id;
             
@@ -47,6 +48,12 @@ class FoodController extends Controller
            return view('newproduct.restaurant');
             
               
+=======
+            $data->save();
+            $results = $this->score($data);
+
+             return view ('newproduct.restaurant');
+>>>>>>> 81c151c1ee0b67d4a6ebfabc763e34b315b3c78a
  }
  
  

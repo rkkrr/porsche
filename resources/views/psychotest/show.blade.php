@@ -8,22 +8,48 @@
 
      
     <div class="text-center">
-        <h1>結果</h1>
+        <h1> 結果 </h1>
            
           <div class="animal"> 
               <div style="font-size:30pt;">
                 <?php
                     if($result <= 25){ 
-                        print  'あなたは鳳凰タイプです' . PHP_EOL; }
-                    else if($result <= 50){ 
-                        print  'あなたはおおかみタイプです' . PHP_EOL; }
-                    else if($result <= 75){ 
-                        print  'あなたはこじかタイプです' . PHP_EOL; }
-                    else if($result <= 100){ 
-                        print  'あなたはひつじタイプです' . PHP_EOL; }
-                    else ($result <= 120){ 
-                        print  'あなたはハムスタータイプです' . PHP_EOL }
+                        print  'あなたは鳳凰タイプです' . PHP_EOL;
                         ?>
+                        <div class="center background">
+                            <img src="images/houou.png" style='width:250px;'>
+                        </div>   
+                    <?php  }
+                        
+                    else if($result <= 50){ 
+                        print  'あなたはおおかみタイプです' . PHP_EOL; 
+                         ?>
+                        <div class="center background">
+                            <img src="images/ookami.png" style='width:250px;'>
+                        </div>   
+                    <?php }
+                    else if($result <= 75){ 
+                        print  'あなたはこじかタイプです' . PHP_EOL; 
+                         ?>
+                        <div class="center background">
+                            <img src="images/deer image.jpg" style='width:250px;'>
+                        </div>   
+                    <?php }
+                    else if($result <= 100){ 
+                        print  'あなたはひつじタイプです' . PHP_EOL;  
+                         ?>
+                        <div class="center background">
+                            <img src="images/sheep image.jpg" style='width:250px;'>
+                        </div>   
+                    <?php }
+                    else { 
+                        print  'あなたはハムスタータイプです' . PHP_EOL;
+                     ?>
+                        <div class="center background">
+                            <img src="images/hamster.png" style='width:250px;'>
+                        </div>
+                    <?php }
+                     ?>
                 </div>
             </div>
         </div>
@@ -31,7 +57,7 @@
         <div class="text-center">
         <div class="picture">
            
-                        <img src='images/houou.png' style='width:250px;'>}
+                        <img src='images/houou.png' style='width:250px;'>
                    
         </div>
         </div>
@@ -211,10 +237,11 @@
                                 if($result <= 25){ 
                                     if($content == 1){
                             ?> 
+                              <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php 
                                         print "<h2> 【王様の抱き枕】</h2>" ;
                                         print "<br>";
-                                        print  "<font size = 3px> 抱きつきながら眠る幸せ、ムニュふわ～の新感覚！</font>". PHP_EOL;
+                                        print  "<font size = 4px> 抱きつきながら眠る幸せ、ムニュふわ～の新感覚！</font>". PHP_EOL;
                                     } else{
                             ?>
                               <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
@@ -231,14 +258,14 @@
                             <?php
                                         print  "<h2> 【セラミックアロマランプ】 </h2>"; 
                                         print "<br>";
-                                        print "<font size = 3px> つややかな質感の陶器のレリーフから、やさしく温かみのある柔らかな灯りがこぼれるアロマランプ </font>". PHP_EOL;} 
+                                        print "<font size = 4px> つややかな質感の陶器のレリーフから、やさしく温かみのある柔らかな灯りがこぼれるアロマランプ </font>". PHP_EOL;} 
                                     else{
                             ?>
                             <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php   
                                         print  "<h2> 【バスアロマ　YURA】 </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>心地よいアロマの香りで素敵なバスタイムを。</font>". PHP_EOL;
+                                        print "<font size = 4px>心地よいアロマの香りで素敵なバスタイムを。</font>". PHP_EOL;
                                 }}
                             //こじか
                                 elseif($result <= 75){
@@ -248,14 +275,14 @@
                             <?php
                                         print  "<h2> 【美睡眠　あしまくら】 </h2>"; 
                                         print "<br>";
-                                        print "<font size = 3px> 脚にもまくらを。あなたの脚の形にフィットしてくれるカーブ形状、脚用まくらです！</font>". PHP_EOL;} 
+                                        print "<font size = 4px> 脚にもまくらを。あなたの脚の形にフィットしてくれるカーブ形状、脚用まくらです！</font>". PHP_EOL;} 
                                     else{
                             ?>
                             <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php   
                                         print  "<h2> 【光るアロマディフューザー】 </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>アロマの優しい香り広がる空間で心も体も癒されます。あなたの気分に合わせて7色から光の色を調節できます。</font>". PHP_EOL;
+                                        print "<font size = 4px>アロマの優しい香り広がる空間で心も体も癒されます。あなたの気分に合わせて7色から光の色を調節できます。</font>". PHP_EOL;
                                 }}
                             //ひつじ
                                 elseif($result <= 100){
@@ -265,14 +292,14 @@
                             <?php
                                         print  "<h2> 【ビーズスライム】 </h2>"; 
                                         print "<br>";
-                                        print "<font size = 3px> カラフルな丸いつぶつぶが入った、のびーるスライム。音フェチにはたまらない、つついたり混ぜるたびにプチプチ音がします♪ </font>". PHP_EOL;} 
+                                        print "<font size = 4px> カラフルな丸いつぶつぶが入った、のびーるスライム。音フェチにはたまらない、つついたり混ぜるたびにプチプチ音がします♪ </font>". PHP_EOL;} 
                                     else{
                             ?>
                             <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php   
                                         print  "<h2> 【ファービー】 </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>愛らしいファービーとの会話やふれあいを楽しみませんか？ファービーたちはあなたと遊べる日を待っています！</font>". PHP_EOL;
+                                        print "<font size = 4px>愛らしいファービーとの会話やふれあいを楽しみませんか？ファービーたちはあなたと遊べる日を待っています！</font>". PHP_EOL;
                                 }}
                              //ハムスター
                                 else{
@@ -282,14 +309,14 @@
                             <?php
                                         print  "<h2> 【リラックスバスセット】</h2>" . PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px>忙しいあなたへ、温かいお風呂にゆっくり使って自分にご褒美をあげましょう。オススメ入浴剤がたっぷり30種類！</font>" . PHP_EOL;}
+                                        print "<font size = 4px>忙しいあなたへ、温かいお風呂にゆっくり使って自分にご褒美をあげましょう。オススメ入浴剤がたっぷり30種類！</font>" . PHP_EOL;}
                                     else{
                             ?>
                             <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                             <?php
                                         print  "<h2> 【ハーブティーセット】 </h2>". PHP_EOL; 
                                         print "<br>";
-                                        print "<font size = 3px> ハーブティーでリラックス！美肌やデトックス、すっきり睡眠などの効果も見込めます。お好きなブレンドで日常をお茶でもっと豊かに♪ </font>" . PHP_EOL;}
+                                        print "<font size = 4px> ハーブティーでリラックス！美肌やデトックス、すっきり睡眠などの効果も見込めます。お好きなブレンドで日常をお茶でもっと豊かに♪ </font>" . PHP_EOL;}
                                 }
                                        
                             ?>
