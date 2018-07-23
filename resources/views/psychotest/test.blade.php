@@ -5,19 +5,19 @@
 {!! Form::open(['route' => 'answer.store']) !!}
   <table class="table table-hover transparent">
     <tr class="header" id="myHeader">
-    <th class="warning"><span class='textt'><label>質問項目</label></span></th>
-    <th class="warning"><label>とても感じる </label></th>
-    <th class="warning"><label>どちらともいえない </label></th>
-    <th class="warning"><label>全く感じない</label></th>
-    <th class="warning" colspan="1"></th>
+        <th class="warning"><span class='textt'><label>質問項目</label></span></th>
+        <th class="warning"><label>とても感じる </label></th>
+        <th class="warning"><label>どちらともいえない </label></th>
+        <th class="warning"><label>全く感じない</label></th>
+        <th class="warning" colspan="1"></th>
     </tr>
         
-    <tr>
-    <th><h4>Q1.誰かが自分の生き方を理解してくれると思う。</h4></th>
-    <td><label><input type="radio" name="q1" id="radio1" value="0"> </label></td>
-    <td><label><input type="radio" name="q1" id="radio1" value="10"checked></label></td>
-    <td><label><input type="radio" name="q1" id="radio1" value="20" ></label></td>
-    <th colspan="1"></th>
+    <tr>ww
+        <th><h4>Q1.誰かが自分の生き方を理解してくれると思う。</h4></th>
+        <td><label><input type="radio" name="q1" id="radio1" value="0"> </label></td>
+        <td><label><input type="radio" name="q1" id="radio1" value="10"checked></label></td>
+        <td><label><input type="radio" name="q1" id="radio1" value="20" ></label></td>
+        <th colspan="1"></th>
     </tr>
     
      <tr>
