@@ -5,23 +5,11 @@ body {
     
 }
 
-.button1 {
-        background:url(/button.png) no-repeat;
-        width:500px;
-        height:40px;
-        margin:150px 30px 10px 30px;
-}
 
-.button2 {
-        background:url(/.png) no-repeat;
-        width:240px;
-        height:40px;
-        margin:150px 30px 10px 30px;
-}
 
 .square_btn {
-    position: relative;
-    display: inline-block;
+    float: right;
+    display: block;
     padding: 0.25em 0.5em;
     text-decoration: none;
     color: #FFF;
