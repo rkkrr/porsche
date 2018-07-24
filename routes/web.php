@@ -48,7 +48,6 @@ Route::group(['middleware' => 'auth'], function () {
         Route::delete('uninvite', 'InviteController@destroy')->name('user.uninvite');
         Route::get('invitings', 'MainController@invitings')->name('users.invitings');
         Route::get('inviters', 'MainController@inviters')->name('users.inviters');
-<<<<<<< HEAD
 });
 });
 
@@ -57,7 +56,3 @@ Route::group(['middleware' =>['web']], function(){
     Route::delete('answer2', 'FoodController@destroy')->name('destroy.user');
     Route::get('answer2','FoodController@show')->name('food.show');
 });
-=======
-    });
-});
->>>>>>> ef36221066ad852e693a250f5e1eeb176f9ecc71
