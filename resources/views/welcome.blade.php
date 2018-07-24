@@ -17,7 +17,7 @@
  
  
  
- <a href="http://stark-beach-53342.herokuapp.com/signup?" class="square_btn">はじめての方はこちら</a>
+ <a href="http://stark-beach-53342.herokuapp.com/signup" class="square_btn">はじめての方はこちら</a>
         <div class="button1">
            
             {!! link_to_route('signup.get', 'はじめての方はこちら', null, ['class' => 'btn btn-lg btn-primary']) !!}

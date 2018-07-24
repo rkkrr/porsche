@@ -7,7 +7,9 @@
 @extends('layouts.app')
 
 @section('content')
-
+<?php
+ $user = $data->user_id;
+?>
 <div class="container">
             <div class="text-center">
         <h1>あなたと同じものを食べたい同期は・・・？</h1>
@@ -163,9 +165,9 @@
                         }}
                          ?>
             </div>
-             </div>
+        </div>
     </div>
 </div>
-
+<br><br>
 @endsection
 </html>

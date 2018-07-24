@@ -20,9 +20,9 @@ class FoodController extends Controller
             
             $data->user_id = \Auth::user()->id;
             
-           $data->save();
+            $data->save();
             
-           return view('newproduct.restaurant', ['data'=>$data]);
+           return view('newproduct.restaurant', ['data' => $data]);
             
 
  }

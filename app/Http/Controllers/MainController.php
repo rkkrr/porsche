@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Result;
+use App\User;
+use App\Food; // add
 
 
 
@@ -86,7 +88,35 @@ class MainController extends Controller
         return view ('psychotest.test2');
     } 
     
-   public function store2(){
-        return view ('newproduct.restaurant');
+    public function invitings($id)
+    {
+        $user = User::find($id);
+        $invitings = $user->invitings()->paginate(10);
+
+        $data = [
+            'user' => $user,
+            'users' => $invitings,
+        ];
+
+        $data += $this->counts($user);
+
+        return view('users.invitings', $data);
     }
+
+    public function inviters($id)
+    {
+        $user = User::find($id);
+        $inviters = $user->inviters()->paginate(10);
+
+        $data = [
+            'user' => $user,
+            'users' => $inviters,
+        ];
+
+        $data += $this->counts($user);
+
+        return view('users.inviters', $data);
+    }
+    
+   
 }
