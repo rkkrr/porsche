@@ -30,7 +30,45 @@
 .navbar-inverse .navbar-nav li a:focus{
     color:#12406B;
 }
+<<<<<<< HEAD
 .top-title {
     text-align: center;
     color: #FF5733;
+=======
+
+/*//bootstrap footbar*/
+.footbar {
+    display: block;
+    position: relative;
+    background-color: #ccc;
+    min-height:30px;
+    height: 100px !important;
+    border:none;
+    color: #fff;
+    bottom: 0;
+}
+.list {
+    
+    text-align: right;
+    position: absolute;
+    right:20px;
+    bottom: 10px;
+}
+
+.footbar .footbar-brand {
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 6px;
+}
+.footbar .footbar-brand:hover,
+.footbar .footbar-brand:focus {
+  color: #12406B;
+}
+.footbar-inverse .footbar-nav li a{
+    color:#fff;
+}
+.footbar-inverse .footbar-nav li a:hover,
+.footbar-inverse .footbar-nav li a:focus{
+    color:#12406B;
+>>>>>>> 2c4eab65a3c6681bf524266f8dc140eb5ec47b10
 }

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<<<<<<< HEAD
 
 <link rel="stylesheet" href="css/welcome.css">
 
@@ -9,6 +10,22 @@
   <div class="inside">
   </div>
 </div>
+=======
+<link rel="stylesheet" href="css/welcome.css">
+
+<div class="wrapper">
+  <div class="inside">
+
+
+  </div>
+</div>
+
+              
+                 
+                        <h2>あぷりの説明</h2>
+                 
+                </div>
+>>>>>>> 2c4eab65a3c6681bf524266f8dc140eb5ec47b10
         
   
    

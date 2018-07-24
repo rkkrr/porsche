@@ -27,5 +27,7 @@
 
             @yield('content')
         </div>
+        <br>
+        @include('commons.footbar')
     </body>
 </html>

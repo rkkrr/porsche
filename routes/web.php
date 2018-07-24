@@ -41,7 +41,20 @@ Route::post('food', 'FoodController@food_store')->name('food.store');
 Route::get('answer3','FoodController@show')->name('food.show');
 // Route::get('food', )
 
+<<<<<<< HEAD
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
 });
 
+=======
+//誘うボタンの実装
+Route::group(['middleware' => 'auth'], function () {
+    // Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
+    Route::group(['prefix' => 'users/{id}'], function () {
+        Route::post('invite', 'InviteController@store')->name('user.invite');
+        Route::delete('uninvite', 'InviteController@destroy')->name('user.uninvite');
+        Route::get('invitings', 'MainController@invitings')->name('users.invitings');
+        Route::get('inviters', 'MainController@inviters')->name('users.inviters');
+    });
+});
+>>>>>>> 2c4eab65a3c6681bf524266f8dc140eb5ec47b10
