@@ -9,8 +9,8 @@
     color: #fff;
     bottom: 0;
 }
+
 .list {
-    
     text-align: right;
     position: fixed;
     right:20px;
@@ -22,13 +22,16 @@
   font-size: 22px;
   letter-spacing: 6px;
 }
+
 .footbar .footbar-brand:hover,
 .footbar .footbar-brand:focus {
   color: #12406B;
 }
+
 .footbar-inverse .footbar-nav li a{
     color:#fff;
 }
+
 .footbar-inverse .footbar-nav li a:hover,
 .footbar-inverse .footbar-nav li a:focus{
     color:#12406B;

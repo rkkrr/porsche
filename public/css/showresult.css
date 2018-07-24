@@ -33,12 +33,14 @@
 
 /*//bootstrap footbar*/
 .footbar {
+    display: block;
+    position: relative;
     background-color: #ccc;
     min-height:30px;
     height: 100px !important;
     border:none;
     color: #fff;
-    
+    bottom: 0;
 }
 .list {
     
