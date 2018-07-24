@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Food;
 use App\User;
 
 class Food extends Model
@@ -13,16 +14,16 @@ class Food extends Model
         return $this->belongsTo(User::class);
     }
     
-    public function doukis(){   
+    // public function doukis(){   
         
-        $data = [];
+    //     $data = [];
   
-        $foodtype = $data->foodtype;
+    //     $foodtype = $data->foodtype;
        
-        $data = DB::table('foods')->pluck('foodtype')->get();
-        $data = [
-            'foodtype' => $foodtype,
-        ];
-    }
+    //     $data = DB::table('foods')->pluck('foodtype')->get();
+    //     $data = [
+    //         'foodtype' => $foodtype,
+    //     ];
+    // }
     
 }
