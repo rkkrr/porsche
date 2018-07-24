@@ -3,32 +3,19 @@
 @section('content')
 
 <link rel="stylesheet" href="css/welcome.css">
-
-
-<div class="wrapper">
-  <div class="inside">
-  </div>
-</div>
-        
-  
    
         <div class="text-center">
             <h1></h1>
  
- 
- 
- <a href="http://stark-beach-53342.herokuapp.com/signup" class="square_btn">はじめての方はこちら</a>
-        <div class="button1">
-           
-            {!! link_to_route('signup.get', 'はじめての方はこちら', null, ['class' => 'btn btn-lg btn-primary']) !!}
+            <div class="col-md-offset-10">
+            {!! link_to_route('signup.get', 'はじめての方はこちら', null, ['class' => 'cp_btn']) !!}
+            </div>
             
-        </div>
-        
-        
-         <a href="http://stark-beach-53342.herokuapp.com/login" class="square_btn">ログイン</a>
-        <div class="button2">
-    
-            {!! link_to_route('login.post', 'ログイン', null, ['class' => 'btn btn-lg btn-primary']) !!}
+            <br><br><br><br>
+            
+            <div class="col-md-offset-10">
+            {!! link_to_route('login.post', 'ログイン', null, ['class' => 'cp_btn']) !!}
+            </div>
         </div>
     
 @endsection
