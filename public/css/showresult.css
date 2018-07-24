@@ -30,11 +30,6 @@
 .navbar-inverse .navbar-nav li a:focus{
     color:#12406B;
 }
-<<<<<<< HEAD
-.top-title {
-    text-align: center;
-    color: #FF5733;
-=======
 
 /*//bootstrap footbar*/
 .footbar {
@@ -70,5 +65,4 @@
 .footbar-inverse .footbar-nav li a:hover,
 .footbar-inverse .footbar-nav li a:focus{
     color:#12406B;
->>>>>>> 2c4eab65a3c6681bf524266f8dc140eb5ec47b10
 }

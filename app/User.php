@@ -30,18 +30,6 @@ class User extends Authenticatable
     public function foodtype(){
         return $this->hasOne(Food::class);}
         
-<<<<<<< HEAD
-    public function username()
-{
-    
-    return 'name';
-}}
-        
-
-//     public function getData()
-//   {
-//     $data = DB::table($this->table)->get();
-=======
     public function invitings()
     {
         return $this->belongsToMany(User::class, 'user_follow', 'user_id', 'invite_id')->withTimestamps();
@@ -68,7 +56,6 @@ class User extends Authenticatable
         return true;
     }
 }
->>>>>>> 2c4eab65a3c6681bf524266f8dc140eb5ec47b10
 
 public function uninvite($userId)
 {
