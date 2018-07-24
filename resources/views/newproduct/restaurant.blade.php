@@ -13,7 +13,7 @@
         <h1>あなたと同じことしたい同期は・・・？</h1>
        
         <div class="square" >
-        <h1>なつひこ @include('commons.invite_button')</h1>
+        <h1>なつひこ @include('commons.invite_button', ['user' => $user])</h1>
 </div>
 <br>
 <br>
