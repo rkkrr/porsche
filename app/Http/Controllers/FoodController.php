@@ -11,6 +11,8 @@ class FoodController extends Controller
 {
      public function food_store(Request $request){
 
+           \Auth::user()->foodtype()->delete();
+
            $this->validate($request, [
            'age' => 'required',
            ]);
@@ -27,12 +29,17 @@ class FoodController extends Controller
         
         $data = Food::where('user_id',\Auth::user()->id)
               ->first();
+    
               
-              
-        $foods=Food::where('foodtype',$data->foodtype)
+        $foods =Food::where([
+             ['foodtype','=',$data->foodtype],
+             ['user_id','<>',\Auth::user()->id],
+             ])
               ->inRandomOrder()
               ->take(3)
               ->get();
+              
+              
          
           
          return view('newproduct.restaurant',['foods'=>$foods]);     
@@ -40,14 +47,5 @@ class FoodController extends Controller
            
     }
     
-    public function destroy($ID){
-        $foodtype = Food::find($ID);
-        
-            $foodtype->delete()
-            ;
-        
-
-        return redirect('/answer2');
-    }
 }
 
