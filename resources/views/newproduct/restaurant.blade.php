@@ -34,7 +34,7 @@
                         </div>
                         <div class="panel-body">
                             <?php
-                                $results = $data->foodtype;
+                                $results = $foods->foodtype;
                                 $restaurant = rand(1,3);
                                 if($results == 1){
                                     if($restaurant == 1){?>

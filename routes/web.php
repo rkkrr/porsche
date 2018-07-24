@@ -37,8 +37,6 @@ Route::get('test2', 'MainController@test2')->name('test2.take2');
 
 //選ばれた食べ物を保存する
 Route::post('food', 'FoodController@food_store')->name('food.store');
-Route::get('answer3','FoodController@show')->name('food.show');
-
 
 //誘うボタンの実装
 Route::group(['middleware' => 'auth'], function () {

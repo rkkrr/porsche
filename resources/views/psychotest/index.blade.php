@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{ secure_asset('css/index.css') }}">
+ 
 @extends('layouts.app')
 
 @section('content')
@@ -10,11 +14,11 @@
             
             <img src='images/alone_panda_image.jpg' style='width:445px;'>
         </div>
-        <div class="jumbotron">
+        <div class="panel panel-warning">
             <div class="text-center">
                 <div class="text-center">
-                    <div class="btn btn-warning btn-lg">
-                        <a href="test">一人で過ごしたいあなたはこちら！！</a>
+                    <div class="square_btn">
+                        <a href="test">ひとりで！</a>
                     </div>     
                 </div>
             </div>
@@ -25,11 +29,11 @@
         <div class="center background">
             <img src='images/party_panda_image.jpg' style='width:445px;'>
         </div>
-        <div class="jumbotron">
+        <div class="panel panel-warning">
             <div class="text-center">
                 <div class="text-center">
-                    <div class ="btn btn-lg btn-warning">
-                        <a href="test2">みんなと過ごしたいあなたはこちら！！</a>
+                    <div class ="square_btn">
+                        <a href="test2">みんなと！</a>
                     </div>     
                 </div>
             </div>
