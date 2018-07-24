@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class FoodController extends Controller
 {
+
      public function food_store(Request $request){
 
            \Auth::user()->foodtype()->delete();
@@ -38,14 +39,13 @@ class FoodController extends Controller
               ->inRandomOrder()
               ->take(3)
               ->get();
-              
-              
          
           
          return view('newproduct.restaurant',['foods'=>$foods]);     
               
            
     }
-    
-}
+ }
+ 
+ 
 

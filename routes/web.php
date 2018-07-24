@@ -38,10 +38,21 @@ Route::get('test2', 'MainController@test2')->name('test2.take2');
 //選ばれた食べ物を保存する
 Route::post('food', 'FoodController@food_store')->name('food.store');
 
-// Route::get('food', )
 
 
 Route::group(['middleware' =>['web']], function(){
     Route::delete('answer2', 'FoodController@destroy')->name('destroy.user');
     Route::get('answer2','FoodController@show')->name('food.show');
+    Route::get('answer3','FoodController@show')->name('food.show');
+// Route::get('food', )
+
+//誘うボタンの実装
+Route::group(['middleware' => 'auth'], function () {
+    // Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
+    Route::group(['prefix' => 'users/{id}'], function () {
+        Route::post('invite', 'InviteController@store')->name('user.invite');
+        Route::delete('uninvite', 'InviteController@destroy')->name('user.uninvite');
+        Route::get('invitings', 'MainController@invitings')->name('users.invitings');
+        Route::get('inviters', 'MainController@inviters')->name('users.inviters');
+    });
 });
