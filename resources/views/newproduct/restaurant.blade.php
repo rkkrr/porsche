@@ -13,9 +13,25 @@
 <div class="container">
     <div class="text-center"><br>
         <h3>あなたと同じことしたい同期は・・・？</h3><br>
-        <div class="square" >
-        <h1>なつひこ @include('commons.invite_button', ['user' => $user])</h1>
-    </div>
+        
+         <table border="1">
+       <tr>
+       <th><h1><font face="MS明朝"><strong>同期</strong></font></h1>
+       <th><h1><strong>名前</strong></h1></th>
+       </tr>
+       <tr>
+       <th>&nbsp;</th>
+       <th>
+   @foreach ($foods as $food)
+   
+        {{$food->user->name}}    @include('commons.invite_button', ['user' => $user])
+       
+   @endforeach
+       </th>
+       </tr>
+       </table>
+<br>
+<br>
         <br><br><br>
         <div class="result">
             <div class="ribbon">
@@ -32,7 +48,7 @@
                             <?php
                                 $results = $data->foodtype;
                                 $restaurant = rand(1,3);
-                                if($results == 0){
+                                if($results == 1){
                                     if($restaurant == 1){?>
                                         <img src='images/Restaurant/chinese1.jpg' style='width:250px;'>
                                         <h3>渋谷　南翔饅頭店</h3><?php
@@ -45,7 +61,7 @@
                                         <img src='images/Restaurant/chinese3.jpg' style='width:250px;'>
                                         <h3>三軒茶屋 燕来香 </h3><?php
                                     ;}}
-                                elseif($results == 5){
+                                elseif($results == 2){
                                     if($restaurant == 1){?>
                                         <img src='images/Restaurant/shinjukutelase.jpg' style='width:250px;'>
                                         <h3>新宿　チーズの店、新宿テラス</h3><?php
@@ -59,7 +75,7 @@
                                         <h3>渋谷　餃子フォンデュ</h3><?php
                                     }}
                                         
-                                elseif($results == 10){
+                                elseif($results == 3){
                                     if($restaurant == 1){?>
                                         <img src='images/Restaurant/imai-lunch.jpg' style='width:250px;'>
                                         <h3>中目黒　今井</h3><?php

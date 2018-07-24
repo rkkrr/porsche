@@ -43,7 +43,7 @@ class FoodController extends Controller
               
          
           
-         return view('newproduct.restaurant',['foods'=>$foods]);     
+         return view('newproduct.restaurant',['data'=>$data,'foods'=>$foods]);     
               
            
     }
