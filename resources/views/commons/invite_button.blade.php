@@ -1,6 +1,6 @@
 @if (Auth::id() != $user->id)
-    @if (Auth::user()->is_inviting($user->id))
-        {!! Form::open(['route' => ['user.uninvite', $user], 'method' => 'delete']) !!}
+    @if (Auth::user()->is_inviting($user))
+        {!! Form::open(['route' => ['user.uninvite', $user->id], 'method' => 'delete']) !!}
             {!! Form::submit('お誘い済み', ['class' => "btn btn-warning d-inline-block"]) !!}
         {!! Form::close() !!}
     @else
