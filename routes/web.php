@@ -44,7 +44,7 @@ Route::group(['middleware' =>['web']], function(){
     Route::delete('answer2', 'FoodController@destroy')->name('destroy.user');
     Route::get('answer2','FoodController@show')->name('food.show');
     Route::get('answer3','FoodController@show')->name('food.show');
-// Route::get('food', )
+});
 
 //誘うボタンの実装
 Route::group(['middleware' => 'auth'], function () {
@@ -54,5 +54,6 @@ Route::group(['middleware' => 'auth'], function () {
         Route::delete('uninvite', 'InviteController@destroy')->name('user.uninvite');
         Route::get('invitings', 'MainController@invitings')->name('users.invitings');
         Route::get('inviters', 'MainController@inviters')->name('users.inviters');
-    });
+});
+
 });

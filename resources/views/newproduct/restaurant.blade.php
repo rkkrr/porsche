@@ -8,10 +8,9 @@
 
 @section('content')
 <?php
- $user = $data->user_id;
+ $user = Auth::user();
 ?>
 <div class="container">
-<<<<<<< HEAD
             <div class="text-center">
         <h1>あなたと同じことしたい同期は・・・？</h1>
        
@@ -107,7 +106,7 @@
                         </div>
                         <div class="panel-body">
                             <?php
-                                $results = $data->foodtype;
+                                $results = $foods->foodtype;
                                 $restaurant = rand(1,3);
                                 if($results == 0){
                                     if($restaurant == 1){?>
