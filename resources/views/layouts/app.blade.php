@@ -17,7 +17,10 @@
         <link rel="stylesheet" href="{{ secure_asset('css/showresult.css') }}">
     </head>
     <body>
-        @include('commons.navbar')
+        <?php
+        $user=Auth::user();
+        ?>
+        @include('commons.navbar', ['user'=>$user])
 
         <div class="container">
             @include('commons.error_messages')

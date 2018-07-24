@@ -30,9 +30,13 @@ class User extends Authenticatable
     public function foodtype(){
         return $this->hasOne(Food::class);}
         
+    public function username()
+{
     
-    
-}
+    return 'name';
+}}
+        
+
 //     public function getData()
 //   {
 //     $data = DB::table($this->table)->get();

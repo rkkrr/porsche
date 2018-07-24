@@ -1,7 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+
 <link rel="stylesheet" href="css/welcome.css">
+
+
+<div class="wrapper">
+  <div class="inside">
+  </div>
+</div>
+        
+  
+   
+        <div class="text-center">
+            <h1></h1>
  
  
  

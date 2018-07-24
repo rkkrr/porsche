@@ -19,6 +19,7 @@
                         <li><a href="test">ひとりで</a></li>
                         <li><a href="test2">みんなで</a></li>
                         <li><a href="home">トップページへ</a></li>
+                        <li>{!! link_to_route('users.index', $user->name )!!}</li>
                         <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
                 </ul>
                 
@@ -44,6 +45,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/" ><strong>PORSCHE</strong></a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
             </div>
             
                     @endif
