@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Food;
+use App\Result;
 
 class FoodController extends Controller
 {
@@ -14,7 +15,7 @@ class FoodController extends Controller
            $this->validate($request, [
            'age' => 'required',
            ]);
-           
+            
             $data = new Food;
             $data->foodtype = $request->age;
             
@@ -23,9 +24,7 @@ class FoodController extends Controller
            $data->save();
             
            return view('newproduct.restaurant', ['data' => $data]);
-            
-
- }
+            }
  
  
 }

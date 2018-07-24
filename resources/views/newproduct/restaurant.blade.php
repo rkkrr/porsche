@@ -13,6 +13,9 @@
         <h1>あなたと同じことしたい同期は・・・？</h1>
        
         <div class="square" >
+            <?php
+            $user = Auth::user();
+            ?>
         <h1>なつひこ @include('commons.invite_button', ['user' => $user])</h1>
 </div>
 <br>
