@@ -8,7 +8,7 @@
 
 @section('content')
 <?php
- $user = $data->user_id;
+ $user = Auth::user();
 ?>
 <div class="container">
     <div class="text-center"><br>

@@ -13,7 +13,7 @@ class CreateUserInviteTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_invite', function (Blueprint $table) {
+       Schema::create('user_invite', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
             $table->integer('invite_id')->unsigned()->index();
@@ -25,9 +25,14 @@ class CreateUserInviteTable extends Migration
 
             // Do not allow duplication of combination of user_id and follow_id
             $table->unique(['user_id', 'invite_id']);
-        });
+       });
     }
 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::dropIfExists('user_invite');
