@@ -76,7 +76,7 @@
                 </div>
             </div>
             
-        <div class="d-block  col-sm-offset-1 col-sm-5">
+        <div class="d-block col-sm-5">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h2 class="panel-title">おすすめの映画・本</h2>
