@@ -7,7 +7,9 @@
 @extends('layouts.app')
 
 @section('content')
-
+<?php
+ $user = $data->user_id;
+?>
 <div class="container">
     <div class="text-center"><br>
         <h3>あなたと同じことしたい同期は・・・？</h3><br>

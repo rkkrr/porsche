@@ -90,10 +90,6 @@ class MainController extends Controller
         return view ('psychotest.test2');
     } 
     
-   public function store2(){
-        return view ('newproduct.restaurant');
-    }
-    
     public function invitings($id)
     {
         $user = User::find($id);
@@ -124,7 +120,5 @@ class MainController extends Controller
         return view('users.inviters', $data);
     }
     
-    
-    
-    
+   
 }

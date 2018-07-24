@@ -32,12 +32,12 @@ class User extends Authenticatable
         
     public function invitings()
     {
-        return $this->belongsToMany(User::class, 'user_invite', 'user_id', 'invite_id')->withTimestamps();
+        return $this->belongsToMany(User::class, 'user_follow', 'user_id', 'invite_id')->withTimestamps();
     }
 
     public function inviters()
     {
-        return $this->belongsToMany(User::class, 'user_invite', 'invite_id', 'user_id')->withTimestamps();
+        return $this->belongsToMany(User::class, 'user_follow', 'invite_id', 'user_id')->withTimestamps();
     }
     
     public function invite($userId)
