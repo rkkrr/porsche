@@ -42,16 +42,5 @@ Route::get('answer3','FoodController@show')->name('food.show');
 // Route::get('food', )
 
 //誘うボタンの実装
-Route::group(['middleware' => 'auth'], function () {
-    Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
-    Route::group(['prefix' => 'users/{id}'], function () {
-        Route::post('invite', 'UserInviteController@store')->name('user.invite');
-        Route::delete('uninvite', 'UserInviteController@destroy')->name('user.uninvite');
-        Route::get('invitings', 'UsersController@invitings')->name('users.invitings');
-        Route::get('inviters', 'UsersController@inviters')->name('users.inviters');
-    });
-
-    Route::resource('microposts', 'MicropostsController', ['only' => ['store', 'destroy']]);
-});
 
 
