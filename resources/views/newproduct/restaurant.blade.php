@@ -7,92 +7,20 @@
 @extends('layouts.app')
 
 @section('content')
-<?php
- $user = Auth::user();
-?>
+
 <div class="container">
-            <div class="text-center">
-        <h1>あなたと同じことしたい同期は・・・？</h1>
-       
-        <table border="1">
-        <tr>
-        <th><h1><font face="MS明朝"><strong>同期</strong></font></h1>
-        <th><h1><strong>名前</strong></h1></th>
-        </tr>
-        <tr>
-        <th>&nbsp;</th>
-        <th>
-    @foreach ($foods as $food)
-    
-         {{$food->user->name}}    @include('commons.invite_button') 
-        
-    @endforeach 
-        </th>
-        </tr>
-        </table>
-<br>
-<br>
-        
-<div class="result">
-    <h2>そんなあなたへのオススメ</h2>
-        <div class="d-block col-sm-5"> 
-        <div class="panel panel-danger">
-        <div class="panel-heading">
-        <h3 class="panel-title">レストラン</h3>
-        </div>
-            <div class="panel-body">
-                 <?php
-                    $results = 0;
-                    $restaurant = rand(1,3);
-                    if($results == 0){
-                        if($restaurant == 1){?>
-                        <img src='images/restaurant.jpg' style='width:250px;'><?php
-                        ;}
-                        else if($restaurant == 2){?>
-                        <img src='images/raising.jpg' style='width:250px;'><?php
-                        ;}
-                        else {?>
-                        <img src='images/ookami.jpg' style='width:250px;'><?php
-                        ;}}
-                    elseif($results == 5){
-                        if($restaurant == 1){?>
-                        <img src='images/children.jpg' style='width:250px;'><?php
-                        ;}
-                        elseif($restaurant == 2){?>
-                        <img src='images/panda1.jpg' style='width:250px;'><?php
-                        }
-                        else {?>
-                        <img src='images/ookami.jpg' style='width:250px;'><?php
-                        }}
-                        
-                    elseif($results == 10){
-                        if($restaurant == 1){?>
-                        <img src='images/deer image.jpg' style='width:250px;'><?php
-                        }
-                        elseif($restaurant == 2){?>
-                        <img src='images/recipe.jpg' style='width:250px;'><?php
-                        }
-                        else {?>
-                        <img src='images/ghamster.jpg' style='width:250px;'><?php
-                        }}
-                        
-                    else{
-                        if($restaurant == 1){?>
-                        <img src='images/restaurant.jpg' style='width:250px;'><?php
-                        }
-                        elseif($restaurant == 2){?>
-                        <img src='images/raising.jpg' style='width:250px;'><?php
-                        }
-                        else {?>
-                        <img src='images/ookami.jpg' style='width:250px;'><?php
-                        }}
-                         ?>
     <div class="text-center"><br>
-        <h3>あなたと同じことしたい同期は・・・？</h3><br>
-        <div class="square" >
-        <h1>なつひこ @include('commons.invite_button', ['user' => $user])</h1>
-    </div>
-        <br><br><br>
+        <h3>あなたと同じものを食べたい同期は・・・？</h3><br>
+        
+        <div class='douki'>
+            @foreach ($foods as $food)
+            <ul>
+                <li>{{$food->user->name}}</li>
+                <li>@include('commons.invite_button', ['user' => $food->user])</li>
+            </ul>
+            @endforeach
+        </div>
+        <br><br><br><br><br>
         <div class="result">
             <div class="ribbon">
                 <h3>そんなあなたへのオススメ</h3>
@@ -108,7 +36,7 @@
                             <?php
                                 $results = $foods->foodtype;
                                 $restaurant = rand(1,3);
-                                if($results == 0){
+                                if($results == 1){
                                     if($restaurant == 1){?>
                                         <img src='images/Restaurant/chinese1.jpg' style='width:250px;'>
                                         <h3>渋谷　南翔饅頭店</h3><?php
@@ -121,7 +49,7 @@
                                         <img src='images/Restaurant/chinese3.jpg' style='width:250px;'>
                                         <h3>三軒茶屋 燕来香 </h3><?php
                                     ;}}
-                                elseif($results == 5){
+                                elseif($results == 2){
                                     if($restaurant == 1){?>
                                         <img src='images/Restaurant/shinjukutelase.jpg' style='width:250px;'>
                                         <h3>新宿　チーズの店、新宿テラス</h3><?php
@@ -135,7 +63,7 @@
                                         <h3>渋谷　餃子フォンデュ</h3><?php
                                     }}
                                         
-                                elseif($results == 10){
+                                elseif($results == 3){
                                     if($restaurant == 1){?>
                                         <img src='images/Restaurant/imai-lunch.jpg' style='width:250px;'>
                                         <h3>中目黒　今井</h3><?php

@@ -66,3 +66,7 @@
 .footbar-inverse .footbar-nav li a:focus{
     color:#12406B;
 }
+.douki li{
+    font-size:30px;
+    display: inline-block;
+}
