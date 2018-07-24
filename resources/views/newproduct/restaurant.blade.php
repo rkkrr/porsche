@@ -12,8 +12,8 @@
     <div class="text-center"><br>
         <h3>あなたと同じことしたい同期は・・・？</h3><br>
         <div class="square" >
-            <h1>なつひこ @include('commons.invite_button')</h1>
-        </div>
+        <h1>なつひこ @include('commons.invite_button', ['user' => $user])</h1>
+    </div>
         <br><br><br>
         <div class="result">
             <div class="ribbon">
