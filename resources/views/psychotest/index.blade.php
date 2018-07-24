@@ -4,8 +4,10 @@
 
 <br>
 <br>
+                    <h3 class="top-title">今の気分をえらんでね。</h3>
     <div class="d-block col-sm-offset-1 col-sm-5"> 
         <div class="center background">
+            
             <img src='images/alone_panda_image.jpg' style='width:445px;'>
         </div>
         <div class="jumbotron">

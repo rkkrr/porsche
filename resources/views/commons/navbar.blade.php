@@ -19,10 +19,20 @@
                         <li><a href="test">ひとりで</a></li>
                         <li><a href="test2">みんなで</a></li>
                         <li><a href="home">トップページへ</a></li>
+                        <li>{!! link_to_route('psychotest.home', $user->name )!!}</li>
                         <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
                 </ul>
                 
-                        
+                         <ul class="nav navbar-nav navbar-left">
+              
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                                <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()]) !!}</li>
+                                <li role="separator" class="divider"></li>
+                                <li>{!! link_to_route('logout.get', 'Logout') !!}</li>
+                            </ul>
+                        </li>
                    
                    
                    
@@ -35,6 +45,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/" ><strong>PORSCHE</strong></a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
             </div>
             
                     @endif

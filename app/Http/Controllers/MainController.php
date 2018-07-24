@@ -12,12 +12,10 @@ use App\Food; // add
 class MainController extends Controller
 {
    
-    public function index(){
-        
-        
-        return view ('psychotest.index');
-        
-        
+      public function index()
+    {
+     
+            return view ('psychotest.index' );
     }
     
     public function test(){

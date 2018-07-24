@@ -39,6 +39,7 @@ Route::get('test2', 'MainController@test2')->name('test2.take2');
 Route::post('food', 'FoodController@food_store')->name('food.store');
 Route::get('answer3','FoodController@show')->name('food.show');
 
+
 //誘うボタンの実装
 Route::group(['middleware' => 'auth'], function () {
     // Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
@@ -47,6 +48,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::delete('uninvite', 'InviteController@destroy')->name('user.uninvite');
         Route::get('invitings', 'MainController@invitings')->name('users.invitings');
         Route::get('inviters', 'MainController@inviters')->name('users.inviters');
+<<<<<<< HEAD
 });
 });
 
@@ -55,3 +57,7 @@ Route::group(['middleware' =>['web']], function(){
     Route::delete('answer2', 'FoodController@destroy')->name('destroy.user');
     Route::get('answer2','FoodController@show')->name('food.show');
 });
+=======
+    });
+});
+>>>>>>> ef36221066ad852e693a250f5e1eeb176f9ecc71

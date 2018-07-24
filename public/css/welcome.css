@@ -1,0 +1,37 @@
+body {
+    background-image: url("../images/Presentation1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.button1 {
+        background:url(/button.png) no-repeat;
+        width:500px;
+        height:40px;
+        margin:150px 30px 10px 30px;
+}
+
+.button2 {
+        background:url(/.png) no-repeat;
+        width:240px;
+        height:40px;
+        margin:150px 30px 10px 30px;
+}
+
+.square_btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*色*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    border: solid 2px #d27d00;/*線色*/
+}
+
+.square_btn:active {/*押したとき*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
