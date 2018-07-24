@@ -15,8 +15,10 @@
         </div>
         <div class="">
             <div class="text-center">
+                <div class="text-center">
                     <div class="square_btn">
                         <a href="test">ひとりで！</a>
+                    </div>     
                 </div>
             </div>
         </div>
@@ -30,10 +32,10 @@
         </div>
         <div class="">
             <div class="text-center">
-                
+                <div class="text-center">
                     <div class ="square_btn">
                         <a href="test2">みんなと！</a>
-                  
+                    </div>     
                 </div>
             </div>
         </div>
