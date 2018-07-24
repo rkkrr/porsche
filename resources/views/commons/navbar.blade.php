@@ -19,12 +19,9 @@
                         <li><a href="test">ひとりで</a></li>
                         <li><a href="test2">みんなで</a></li>
                         <li><a href="home">トップページへ</a></li>
+                        <li>{!! link_to_route('psychotest.home', $user->name )!!}</li>
                         <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
                 </ul>
-                
-                        
-                   
-                   
                    
                     @else
                      <div class="navbar-header">

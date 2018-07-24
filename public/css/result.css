@@ -81,7 +81,6 @@ table {
   border-collapse: collapse;
   border: solid 2px #FFBC6F;
   background-color: rgba(255,255,255,0.8);
-  width:100%;
 }
 
 body {
@@ -163,3 +162,8 @@ tr {
   padding-top: 102px;
 }
 
+.blank {
+  display: block;
+  height: 500px;
+  position: fixed;
+}

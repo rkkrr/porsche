@@ -12,12 +12,10 @@ use App\Result;// add
 class MainController extends Controller
 {
    
-    public function index(){
-        
-        
-        return view ('psychotest.index');
-        
-        
+      public function index()
+    {
+     
+            return view ('psychotest.index' );
     }
     
     public function test(){
@@ -72,6 +70,7 @@ class MainController extends Controller
         
         $result = $this->score($data);
         
+        
         $content =  $data->q12;
         
        return view ('psychotest.show', ['result' => $result, 'content'=>$content]);
@@ -89,7 +88,7 @@ class MainController extends Controller
         return view ('psychotest.test2');
     } 
     
- 
+
     public function invitings($id)
     {
         $user = User::find($id);
@@ -119,4 +118,5 @@ class MainController extends Controller
 
         return view('users.inviters', $data);
     }
+
 }
