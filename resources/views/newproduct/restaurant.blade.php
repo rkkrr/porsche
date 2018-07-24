@@ -7,32 +7,20 @@
 @extends('layouts.app')
 
 @section('content')
-<?php
- $user = Auth::user();
-?>
+
 <div class="container">
     <div class="text-center"><br>
-        <h3>あなたと同じことしたい同期は・・・？</h3><br>
+        <h3>あなたと同じものを食べたい同期は・・・？</h3><br>
         
-         <table border="1">
-       <tr>
-       <th><h1><font face="MS明朝"><strong>同期</strong></font></h1>
-       <th><h1><strong>名前</strong></h1></th>
-       </tr>
-       <tr>
-       <th>&nbsp;</th>
-       <th>
-   @foreach ($foods as $food)
-   
-        {{$food->user->name}}    @include('commons.invite_button', ['user' => $user])
-       
-   @endforeach
-       </th>
-       </tr>
-       </table>
-<br>
-<br>
-        <br><br><br>
+        <div class='douki'>
+            @foreach ($foods as $food)
+            <ul>
+                <li>{{$food->user->name}}</li>
+                <li>@include('commons.invite_button', ['user' => $food->user])</li>
+            </ul>
+            @endforeach
+        </div>
+        <br><br><br><br><br>
         <div class="result">
             <div class="ribbon">
                 <h3>そんなあなたへのオススメ</h3>
