@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Result;
 use App\User;
-use App\Food; // add
+use App\Food;
+use App\Result;// add
 
 
 
@@ -88,6 +88,7 @@ class MainController extends Controller
         return view ('psychotest.test2');
     } 
     
+
     public function invitings($id)
     {
         $user = User::find($id);
@@ -117,6 +118,5 @@ class MainController extends Controller
 
         return view('users.inviters', $data);
     }
-    
-   
+
 }

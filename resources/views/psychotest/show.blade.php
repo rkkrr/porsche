@@ -67,73 +67,83 @@
                             <div style="line-height:160%">
                                 <div class="panel-body">
                                     <ul class="list-unstyled">
-                                        <?php
-                                                if($result <= 25){ 
-                                                    print  'あなたは、周りからは完全無欠だと思われており、自分もそうでなければならないと思っているようです。何があってもめげず、常に堂々としているあなたは周りに元気を与える存在となっていますが、一人でため込んでしまう癖があるようです。' . PHP_EOL . '<br><br>'; }
-                                                elseif($result <= 50){
-                                                    print  '<br>あなたは、マイペースで一人でいるのが好きなように思われているようです。でも実は不器用で、一人でいるときにワオーンと鳴くことでしか寂しさを表現できないようです。' . PHP_EOL . '<br><br><br>'; }
-                                                elseif($result <= 75){
-                                                    print  'あなたは、人見知りタイプの寂しがり屋さんのようです。生まれたての小鹿のように足がプルプルしているシャイなあなたは、誰かに話しかけたいけれど話しかけるのに多くの勇気を必要としているようです。' . PHP_EOL . '<br><br>';  }
-                                                elseif($result <= 100){
-                                                    print 'あなたは、常に誰かといたいと思う寂しがり屋さんのようです。人の気を引きたくて、すぐにメェと鳴いてしまうのは、群れを作るために仲間が欲しいと思っているからかもしれません。'  . PHP_EOL . '<br><br>'; }
-                                                else{
-                                                    print  'あなたは、人一倍寂しがり屋さんのようです。ひまわりの種を握りしめ、おがくずにうずくまってしまうあなたは、寂しくても誰かに連絡を取れず一人で部屋に引きこもってしまうことも多いのは？' . PHP_EOL . '<br><br><br>';}
-                                        ?>
-                                    </ul>
-                                   <br>
-                                </div>
+                                    @include('psychotest.result')
+                                </ul>
+                               <br>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             
-            <div class="d-block col-sm-5">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h2 class="panel-title">おすすめの映画・本</h2>
-                    </div>
-                    <div style="font-size:20pt;">
-                        <div align="center">    
-                            <div class="panel-body">
-                                <ul class="list-unstyled">
-                                    <?php 
-                                    //鳳凰
-                                        if($result <= 25){ 
-                                            if($content == 1){
-                                    ?> 
-                                    
-                                                <br><span class="glyphicon glyphicon-film" style="font-size: 40px"></span></br>
-                                    
-                                    <?php 
-                                                print "<h2> 'The notebook'</h2>" ;
-                                                print "<br>";
-                                                print  "<font size = 4px> 激しい恋の物語、何も考えるな、感じろ。 </font>". PHP_EOL;
-                                            } else{
-                                    ?>  
-                                    
-                                                <br><span class="glyphicon glyphicon-book" style="font-size: 40px"></span></br>
-                                    
-                                    <?php    
-                                                print "<h2> 『スイミー』 </h2>". PHP_EOL; 
-                                                print "<br>";
-                                                print "<font size = 4px>仲間を失って一人ぼっちのおさかなが、海のさまざまないきものと出会ううちに、勇気をもって踏み出すことを学んでいくお話です。 </font>". PHP_EOL;
-                                        }}
-                                    //おおかみ
-                                        elseif($result <= 50){
-                                            if($content == 1){
-                                    ?>
-                                    
-                                                <br><span class="glyphicon glyphicon-film" style="font-size: 40px"></span></br>
-                                    
-                                    <?php
-                                                print  "<h2> 'Good will hunting' </h2>"; 
-                                                print "<br>";
-                                                print "<font size = 4px> 天才的な頭脳を持ちながら喧嘩を繰り返す若者と、彼に数学の才能を見出した教授との交流を通して成長していく過程を描いたヒューマンドラマ。 </font>". PHP_EOL;} 
-                                             
-                                            else{
-                                    ?>
+        <div class="d-block  col-sm-offset-1 col-sm-5">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h2 class="panel-title">おすすめの映画・本</h2>
+                </div>
+                <div style="font-size:20pt;">
+                    <div align="center">    
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                                <?php 
+                                //鳳凰
+                                    if($result <= 25){ 
+                                        if($content == 1){
+                                ?> 
+                                
+                                            <br><span class="glyphicon glyphicon-film" style="font-size: 40px"></span></br>
+                                
+                                <?php 
+                                            print "<h2> 'The notebook'</h2>" ;
+                                            print "<br>";
+                                            print  "<font size = 4px> 激しい恋の物語、何も考えるな、感じろ。 </font>". PHP_EOL;
+                                        } else{
+                                ?>  
+                                
+                                            <br><span class="glyphicon glyphicon-book" style="font-size: 40px"></span></br>
+                                
+                                <?php    
+                                            print "<h2> 『スイミー』 </h2>". PHP_EOL; 
+                                            print "<br>";
+                                            print "<font size = 4px>仲間を失って一人ぼっちのおさかなが、海のさまざまないきものと出会ううちに、勇気をもって踏み出すことを学んでいくお話です。 </font>". PHP_EOL;
+                                    }}
+                                //おおかみ
+                                    elseif($result <= 50){
+                                        if($content == 1){
+                                ?>
+                                
+                                            <br><span class="glyphicon glyphicon-film" style="font-size: 40px"></span></br>
+                                
+                                <?php
+                                            print  "<h2> 'Good will hunting' </h2>"; 
+                                            print "<br>";
+                                            print "<font size = 4px> 天才的な頭脳を持ちながら喧嘩を繰り返す若者と、彼に数学の才能を見出した教授との交流を通して成長していく過程を描いたヒューマンドラマ。 </font>". PHP_EOL;} 
+                                         
+                                        else{
+                                ?>
+                                     
+                                            <br><span class="glyphicon glyphicon-book" style="font-size: 40px"></span></br>
+                                <?php   
+                                            print  "<h2> 『嫌われる勇気』 </h2>". PHP_EOL; 
+                                            print "<br>";
+                                            print "<font size = 4px>世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓発本。<font>". PHP_EOL;
+                                    }}
+                                //こじか
+                                    elseif($result <= 75){
+                                        if($content == 1){
+                                ?>
+                                
+                                            <br><span class="glyphicon glyphicon-film" style="font-size: 40px"></span></br>
+                                
+                                <?php
+                                            print  "<h2> 'マイ・インターン' </h2>"; 
+                                            print "<br>";
+                                            print "<font size = 4px> プライベートと仕事、どっちも大切にしたい。そんなあなたに贈る一作。 </font>". PHP_EOL;} 
+                                             else{
+                                ?>
                                          
                                                 <br><span class="glyphicon glyphicon-book" style="font-size: 40px"></span></br>
+                                                
                                     <?php   
                                                 print  "<h2> 『嫌われる勇気』 </h2>". PHP_EOL; 
                                                 print "<br>";
