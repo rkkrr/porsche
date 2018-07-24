@@ -9,15 +9,15 @@
 @section('content')
 
 <div class="container">
-    <div class="text-center">
-        <h1>あなたと同じことしたい同期は・・・？</h1>
+    <div class="text-center"><br>
+        <h3>あなたと同じことしたい同期は・・・？</h3><br>
         <div class="square" >
             <h1>なつひこ @include('commons.invite_button')</h1>
         </div>
         <br><br><br>
         <div class="result">
             <div class="ribbon">
-                <h2>そんなあなたへのオススメ</h2>
+                <h3>そんなあなたへのオススメ</h3>
             </div>
             <br><br>
             <div class="row">
@@ -158,5 +158,6 @@
         </div>
     </div>
 </div>
+<br><br>
 @endsection
 </html>
