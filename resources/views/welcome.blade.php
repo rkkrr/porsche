@@ -8,7 +8,7 @@
  
             <div class="col-md-offset-10">
                 
-            {!! link_to_route('signup.get', 'はじめての方はこちら', null, ['class' => 'cp_btn']) !!}            </div>
+            {!! link_to_route('signup.get', 'はじめての方はこちら', null, ['class' => 'cp_btn']) !!}
             </div>
             <br><br><br><br>
             <div class="col-md-offset-10">
