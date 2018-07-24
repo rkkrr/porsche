@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');});
 
 
-Route::get('/home', 'MainController@index')->name('psychotest.home');
+Route::get('home', 'MainController@index')->name('psychotest.home');
 Route::post('answer', 'MainController@store')->name('answer.store');
 
 
