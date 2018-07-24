@@ -39,5 +39,15 @@ class FoodController extends Controller
               
            
     }
+    
+    public function destroy($ID){
+        $foodtype = Food::find($ID);
+        
+            $foodtype->delete()
+            ;
+        
+
+        return redirect('/answer2');
+    }
 }
 
