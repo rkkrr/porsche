@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Food;
-use Illuminate\Support\Facades\DB;
+use App\Result;
 
 class FoodController extends Controller
 {
+
      public function food_store(Request $request){
 
            \Auth::user()->foodtype()->delete();
@@ -16,7 +17,7 @@ class FoodController extends Controller
            $this->validate($request, [
            'age' => 'required',
            ]);
-           
+            
             $data = new Food;
             $data->foodtype = $request->age;
 
@@ -39,8 +40,6 @@ class FoodController extends Controller
               ->inRandomOrder()
               ->take(3)
               ->get();
-              
-              
          
           
          return view('newproduct.restaurant',['data'=>$data,'foods'=>$foods]);     
