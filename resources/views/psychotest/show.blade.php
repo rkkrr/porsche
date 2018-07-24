@@ -59,6 +59,7 @@
         </div>
         
         <br>
+        <div class="container1">
         <div class="row">
         <div class="d-block">
         <div class="result">
@@ -81,6 +82,7 @@
                     </div>
                 </div>
             </div>
+        </div>
             
         <div class="d-block  col-sm-offset-1 col-sm-5">
             <div class="panel panel-info">
@@ -204,8 +206,11 @@
             </div>
             </div>
         </div>
+        </div>
+        </div>
+        </div>
     
-    
+        <div class="container1">
         <div class="row">
        
          <div class="d-block  col-sm-offset-1 col-sm-5">
@@ -411,7 +416,13 @@
                 </div>
             </div>
         </div>
-        <a class="btn btn-primary" href="{{ route("test2.take2") }}" role="button">Link</a>    
+        </div>
+        <br>
+        <div class="button_center">
+        <a class="btn btn-primary" href="{{ route("test2.take2") }}" role="button">みんなと遊びたい人はこちら！</a>  
+        </div>
     </div>
+
+    
 @endsection
 </html>
