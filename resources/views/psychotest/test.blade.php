@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 <link rel="stylesheet" href="{{ secure_asset('css/result.css') }}">
 
-=======
->>>>>>> d27347e9fa7762ccf18c2fbfb1ca3077c8502157
 @extends('layouts.app')
 @section('content')
 {!! Form::open(['route' => 'answer.store']) !!}
@@ -137,12 +134,8 @@
   {!! Form::close() !!}
 <br>
 <br>
-<<<<<<< HEAD
 <br>
 <br>
-=======
-
->>>>>>> d27347e9fa7762ccf18c2fbfb1ca3077c8502157
 
 
 @endsection

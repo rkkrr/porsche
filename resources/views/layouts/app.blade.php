@@ -28,6 +28,17 @@
             @yield('content')
         </div>
         <br>
+        <?php
+            $url = $_SERVER['REQUEST_URI'];
+         ?>
+
+        <?php if($url == "/"){ ?>
+        @include('commons.footbar2')
+<?php }else{ ?>
+
         @include('commons.footbar')
+        
+        <?php } ?>
+
     </body>
 </html>
