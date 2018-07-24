@@ -17,7 +17,6 @@ Route::get('/', function () {
 
 Route::get('/home', 'MainController@index')->name('psychotest.home');
 Route::post('answer', 'MainController@store')->name('answer.store');
-Route::get('answer2', 'MainController@store2')->name('answer2.store2');
 
 
 //test pageにとぶ
@@ -50,4 +49,11 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('invitings', 'MainController@invitings')->name('users.invitings');
         Route::get('inviters', 'MainController@inviters')->name('users.inviters');
     });
+
+// Route::get('food', )
+
+
+Route::group(['middleware' =>['web']], function(){
+    Route::delete('answer2', 'FoodController@destroy')->name('destroy.user');
+    Route::get('answer2','FoodController@show')->name('food.show');
 });

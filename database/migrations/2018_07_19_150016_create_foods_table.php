@@ -22,8 +22,6 @@ class CreateFoodsTable extends Migration
            // Foreign key constraint
            $table->foreign('user_id')->references('id')->on('users');
             
-           // Do not allow duplication of combination of user_id and foodtype
-            $table->unique(['user_id','foodtype']);
         });
     }
 
