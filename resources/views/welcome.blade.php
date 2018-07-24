@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="css/welcome.css">
    
         <div class="text-center">
-            <h1></h1>
  
             <div class="col-md-offset-10">
             {!! link_to_route('signup.get', 'はじめての方はこちら', null, ['class' => 'cp_btn']) !!}
