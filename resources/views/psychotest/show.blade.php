@@ -439,7 +439,7 @@
             </div>
         </div>
             <br><br>
-            <a class="jump2 btn btn-lg btn-warning col-md-offset-4" href="{{ route("test2.take2") }}" role="button">やっぱり誰かと過ごしたい人はこちら！</a> 
+            <a class="jump2 btn btn-lg btn-warning col-md-offset-5" href="{{ route("test2.take2") }}" role="button">やっぱり誰かと過ごしたい人はこちら！</a> 
             <br><br><br>
     </div>
 </div>
