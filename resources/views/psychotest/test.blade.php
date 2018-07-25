@@ -5,11 +5,11 @@
 {!! Form::open(['route' => 'answer.store']) !!}
   <table class="table table-hover transparent">
     <tr class="header" id="myHeader">
-        <th class="warning"><span class='textt'><label>質問項目</label></span></th>
-        <th class="warning"><label>とても感じる </label></th>
-        <th class="warning"><label>どちらともいえない </label></th>
-        <th class="warning"><label>全く感じない</label></th>
-        <th class="warning" colspan="1"></th>
+        <th class="info"><span class='textt'><label>質問項目</label></span></th>
+        <th class="info"><label>とても感じる </label></th>
+        <th class="info"><label>どちらともいえない </label></th>
+        <th class="info"><label>全く感じない</label></th>
+        <th class="info" colspan="1"></th>
     </tr>
         
     <tr>
@@ -101,11 +101,11 @@
     </tr>
     
     <tr>
-        <th class="warning" colspan="1"></th>
-        <th class="warning"><label>とても感じる </label></th>
-        <th class="warning"><label>どちらともいえない </label></th>
-        <th class="warning"><label>全く感じない</label></th>
-        <th class="warning" colspan="1"></th>
+        <th class="info" colspan="1"></th>
+        <th class="info"><label>とても感じる </label></th>
+        <th class="info"><label>どちらともいえない </label></th>
+        <th class="info"><label>全く感じない</label></th>
+        <th class="info" colspan="1"></th>
     </tr>
     
     <tr class="blank_row">
@@ -113,11 +113,11 @@
     </tr>
     
     <tr>
-        <th class="primary" colspan="1"></th>
-        <td class="primary"><h4><label>映画</label></h4></td>
-        <td class="primary"><h4><label>本</label></h4></td>
-        <td class="primary" clospan="1"></td>
-        <td class="primary" clospan="1"></td>
+        <th class="info" colspan="1"></th>
+        <td class="info"><h4><label>映画</label></h4></td>
+        <td class="info"><h4><label>本</label></h4></td>
+        <td class="info" clospan="1"></td>
+        <td class="info" clospan="1"></td>
     </tr>
         
     
