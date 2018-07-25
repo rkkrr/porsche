@@ -42,3 +42,6 @@ Route::group(['middleware' =>['web']], function(){
     Route::delete('answer2', 'FoodController@destroy')->name('destroy.user');
     Route::get('answer2','FoodController@show')->name('food.show');
 });
+Route::get('testresult', 'MainController@testresult')->name('psychotest.testresult');
+
+
