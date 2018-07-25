@@ -34,11 +34,11 @@
                         <h3>中目黒　今井</h3><?php
                         }
                         elseif($restaurant == 2){?>
-                        <img src='images/Restaurant/s-0nbp.jpg' style='width:250px;'>
+                        <img src='images/Restaurant/s_0nbp.jpg' style='width:250px;'>
                         <h3>浅草　みそら屋</h3><?php
                         }
                         else {?>
-                        <img src='images/Restaurant/s-0nbp.jpg' style='width:250px;'>
+                        <img src='images/Restaurant/s_0nbp.jpg' style='width:250px;'>
                         <h3>浅草　kamotowine to and be yourserf.</h3><?php
                         }}
                         
