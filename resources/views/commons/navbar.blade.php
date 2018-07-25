@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <header>
    <link rel="stylesheet" href="{{ secure_asset('css/showresult.css') }}">
     <nav class="navbar navbar-inverse navbar-static-top">
@@ -37,4 +35,3 @@
         </div>
     </nav>
 </header>
-</html>
