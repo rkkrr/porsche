@@ -4,6 +4,11 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
             integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
             crossorigin="anonymous"></script>
+            
+<?php
+ $user=Auth::user();
+ ?>
+ 
 @extends('layouts.app')
 
 @section('content')
@@ -34,7 +39,7 @@
                         </div>
                         <div class="panel-body">
                             <?php
-                                $results = $foods->foodtype;
+                                $results = $data->foodtype;
                                 $restaurant = rand(1,3);
                                 if($results == 1){
                                     if($restaurant == 1){?>
