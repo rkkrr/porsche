@@ -132,13 +132,6 @@
 
   {!! Form::submit('あなたの孤独度は…！', ['class' => 'btn btn-lg btn-primary btn-block strong']) !!}
   {!! Form::close() !!}
-<<<<<<< HEAD
-<br>
-<br>
-<br>
-<br>
-=======
 <br><br><br><br><br><br><br>
->>>>>>> 10c2f72e464d6e9220d9f79c061352675ca8f5ce
 
 @endsection
