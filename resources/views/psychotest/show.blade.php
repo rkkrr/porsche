@@ -15,7 +15,7 @@
                         print  'あなたは鳳凰タイプです' . PHP_EOL;
                         ?>
                         <div class="center background">
-                            <img src="images/houou.png" style='width:250px;'>
+                            <img src="images/houou.jpg" style='width:250px;'>
                         </div>   
                     <?php  }
                         
@@ -56,29 +56,30 @@
                    
         </div>
         </div>
-        <div class="container1">
+    <div class="container1">
         <div class="row">
-        <div class="d-block">
-            <div class="result">
-                <div class="d-block col-sm-offset-1 col-sm-5"> 
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <h2 class="panel-title">心理テストの詳細結果</h2>
-                        </div>
+            <div class="d-block">
+                <div class="result">
+                    <div class="d-block col-sm-offset-1 col-sm-5"> 
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">心理テストの詳細結果</h2>
+                            </div>
                         <br><br>
-                        <div style="font-size:15pt;">
-                            <div style="line-height:160%">
-                                <div class="panel-body">
-                                    <ul class="list-unstyled">
-                                    @include('psychotest.result')
-                                </ul>
-                               <br>
+                            <div style="font-size:15pt;">
+                                <div style="line-height:160%">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled">
+                                        @include('psychotest.result')
+                                    </ul>
+                                   <br>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
             
         <div class="d-block col-sm-5">
             <div class="panel panel-info">
@@ -229,14 +230,16 @@
                                 <?php 
                                             print "<h2> 【王様の抱き枕】</h2>" ;
                                             print "<br>";
-                                            print  "<font size = 4px> 抱きつきながら眠る幸せ、ムニュふわ～の新感覚！</font>". PHP_EOL;
+                                            print  "<font size = 4px> 抱きつきながら眠る幸せ、ムニュふわ～の新感覚！
+                                            <br> <a href'=https://item.rakuten.co.jp/jibunmakura/09-be-4167/'>商品詳細はこちら</a></font>". PHP_EOL;
                                         } else{
                                 ?>
                                   <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                                 <?php    
                                             print "<h2> 【アクアチューブ　クラゲ】 </h2>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 4px>まるで小さな水族館。3匹のクラゲが優雅にゆらめく癒しのファンタジーアート  </font>". PHP_EOL;
+                                            print "<font size = 4px>まるで小さな水族館。3匹のクラゲが優雅にゆらめく癒しのファンタジーアート  
+                                             <br> <a href='https://item.rakuten.co.jp/ampoule/10002807/?smadid=9740710ba7de6f9b&iasid=07rpp_10095__e9_jjqsf4c8_4v_857ef2f2-60d7-41ee-8d60-123516a25be0'>商品詳細はこちら</a></font>". PHP_EOL;
                                     }}
                                  //おおかみ
                                     elseif($result <= 50){
@@ -246,14 +249,16 @@
                                 <?php
                                             print  "<h2> 【セラミックアロマランプ】 </h2>"; 
                                             print "<br>";
-                                            print "<font size = 4px> つややかな質感の陶器のレリーフから、やさしく温かみのある柔らかな灯りがこぼれるアロマランプ </font>". PHP_EOL;} 
+                                            print "<font size = 4px> つややかな質感の陶器のレリーフから、やさしく温かみのある柔らかな灯りがこぼれるアロマランプ 
+                                            <br> <a href='https://item.rakuten.co.jp/ampoule/10002395/'>商品詳細はこちら</a></font>". PHP_EOL;} 
                                         else{
                                 ?>
                                 <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                                 <?php   
                                             print  "<h2> 【バスアロマ　YURA】 </h2>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 4px>心地よいアロマの香りで素敵なバスタイムを。</font>". PHP_EOL;
+                                            print "<font size = 4px>心地よいアロマの香りで素敵なバスタイムを。
+                                              <br> <a href='https://item.rakuten.co.jp/gooddayshop/ab3-1031593/?scid=af_pc_etc&sc2id=af_113_0_10001868'>商品詳細はこちら</a></font>". PHP_EOL;
                                     }}
                                 //こじか
                                     elseif($result <= 75){
@@ -263,14 +268,16 @@
                                 <?php
                                             print  "<h2> 【美睡眠　あしまくら】 </h2>"; 
                                             print "<br>";
-                                            print "<font size = 4px> 脚にもまくらを。あなたの脚の形にフィットしてくれるカーブ形状、脚用まくらです！</font><br>". PHP_EOL;} 
+                                            print "<font size = 4px> 脚にもまくらを。あなたの脚の形にフィットしてくれるカーブ形状、脚用まくらです！
+                                             <br> <a href='https://item.rakuten.co.jp/jibunmakura/09-sn-5769/'>商品詳細はこちら</a></font><br>". PHP_EOL;} 
                                         else{
                                 ?>
                                 <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                                 <?php   
                                             print  "<h2> 【光るアロマディフューザー】 </h2>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 4px>アロマの優しい香り広がる空間で心も体も癒されます。あなたの気分に合わせて7色から光の色を調節できます。</font>". PHP_EOL;
+                                            print "<font size = 4px>アロマの優しい香り広がる空間で心も体も癒されます。あなたの気分に合わせて7色から光の色を調節できます。 
+                                            <br> <a href='https://item.rakuten.co.jp/emoorbaby/wd-aromad/'>商品詳細はこちら</a></font>". PHP_EOL;
                                     }}
                                 //ひつじ
                                     elseif($result <= 100){
@@ -280,14 +287,16 @@
                                 <?php
                                             print  "<h2> 【ビーズスライム】 </h2>"; 
                                             print "<br>";
-                                            print "<font size = 4px> カラフルな丸いつぶつぶが入った、のびーるスライム。音フェチにはたまらない、つついたり混ぜるたびにプチプチ音がします♪ </font>". PHP_EOL;} 
+                                            print "<font size = 4px> カラフルな丸いつぶつぶが入った、のびーるスライム。音フェチにはたまらない、つついたり混ぜるたびにプチプチ音がします♪ 
+                                             <br> <a href='https://item.rakuten.co.jp/lovelyip/slime54/'>商品詳細はこちら</a></font>". PHP_EOL;} 
                                         else{
                                 ?>
                                 <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                                 <?php   
                                             print  "<h2> 【ファービー】 </h2>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 4px>愛らしいファービーとの会話やふれあいを楽しみませんか？ファービーたちはあなたと遊べる日を待っています！</font>". PHP_EOL;
+                                            print "<font size = 4px>愛らしいファービーとの会話やふれあいを楽しみませんか？ファービーたちはあなたと遊べる日を待っています！
+                                             <br> <a href='https://item.rakuten.co.jp/clothoid/20170818-4/'>商品詳細はこちら</a></font>". PHP_EOL;
                                     }}
                                  //ハムスター
                                     else{
@@ -297,14 +306,16 @@
                                 <?php
                                             print  "<h2> 【リラックスバスセット】</h2>" . PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 4px>忙しいあなたへ、温かいお風呂にゆっくり使って自分にご褒美をあげましょう。オススメ入浴剤がたっぷり30種類！</font>" . PHP_EOL;}
+                                            print "<font size = 4px>忙しいあなたへ、温かいお風呂にゆっくり使って自分にご褒美をあげましょう。オススメ入浴剤がたっぷり30種類！
+                                            <br> <a href='https://item.rakuten.co.jp/bowerbird-by-charley/r-set-1/'>商品詳細はこちら</a></font>" . PHP_EOL;}
                                         else{
                                 ?>
                                 <br><span class="glyphicon glyphicon-leaf" style="font-size: 40px"></span></br>
                                 <?php
                                             print  "<h2> 【ハーブティーセット】 </h2>". PHP_EOL; 
                                             print "<br>";
-                                            print "<font size = 4px> ハーブティーでリラックス！美肌やデトックス、すっきり睡眠などの効果も見込めます。お好きなブレンドで日常をお茶でもっと豊かに♪ </font>" . PHP_EOL;}
+                                            print "<font size = 4px> ハーブティーでリラックス！美肌やデトックス、すっきり睡眠などの効果も見込めます。お好きなブレンドで日常をお茶でもっと豊かに♪
+                                              <br> <a href='https://item.rakuten.co.jp/harunoki/10000048/'>商品詳細はこちら</a></font>" . PHP_EOL;}
                                     }
                                            
                                 ?>
