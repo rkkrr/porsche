@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="{{ secure_asset('css/index.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/index.css') }}">
  
 @extends('layouts.app')
 
@@ -9,6 +7,7 @@
 <br>
 <br>
                     <h3 class="top-title">今の気分をえらんでね。</h3>
+<div class='row'>
     <div class="d-block col-sm-offset-1 col-sm-5"> 
     <div class="box6">
         <div class="center background">
@@ -40,4 +39,5 @@
         </div>
         </div>
     </div>
+</div>
 @endsection

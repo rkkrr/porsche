@@ -16,11 +16,12 @@
         
         <link rel="stylesheet" href="{{ secure_asset('css/showresult.css') }}">
     </head>
-    <body>
+    <body style='min-height:100%'>
         <?php
         $user=Auth::user();
         ?>
         @include('commons.navbar', ['user'=>$user])
+
         <div class="container">
             @include('commons.error_messages')
 
