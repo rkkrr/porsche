@@ -6,7 +6,7 @@
 
 <br><br>
 <div class="text-center">
-    <h3 class="top-title">今の気分をえらんでね。</h3>
+    <h3 class="top-title">どのように過ごしたいですか？</h3>
 </div>
 <div class="d-block col-sm-offset-1 col-sm-5"> 
     <div class="box6">

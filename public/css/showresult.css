@@ -59,7 +59,12 @@ h1 {
     letter-spacing: 2px;
 }
 
-.douki li{
+.douki{
     font-size: 30px;
-    display: inline-block;
+}
+.food-douki {
+        border: none;
+}
+.douki td{
+    width: 200px;
 }

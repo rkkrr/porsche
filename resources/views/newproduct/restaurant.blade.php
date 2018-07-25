@@ -10,16 +10,16 @@
 <br>
     <div class="text-center">
        <h3>あなたと同じものを食べたい同期は・・・？</h3>
-    
+    </div>
         <br>
-        <div class='douki'>
+        <div class="douki col-sm-offset-5">
             @foreach ($foods as $food)
-                <ul>
-                    <li>{{$food->user->name}}</li>
-                    <li>@include('commons.invite_button', ['user' => $food->user])</li>
-                </ul>
+                <table class="food-douki">
+                    <td>{{$food->user->name}}</td>
+                    <td>@include('commons.invite_button', ['user' => $food->user])</td>
+                </table>
             @endforeach
-        </div>
+        
     </div>
         <br><br><br><br><br>
         <div class="ribbon">
@@ -52,11 +52,11 @@
                             ;}}
                         elseif($results == 2){
                             if($restaurant == 1){?>
-                            <img src='images/Restaurant/shinjukutelase.jpg' style='width:250px;'>
+                            <img src='images/Restaurant/shinjukutelase.png' style='width:250px;'>
                             <h3>新宿　チーズの店、新宿テラス</h3><?php
                             ;}
                             elseif($restaurant == 2){?>
-                            <img src='images/Restaurant/shinjukutelase.lpg' style='width:250px;'>
+                            <img src='images/Restaurant/sppakanapoli.png' style='width:250px;'>
                             <h3>新宿　スパッカナポリ</h3><?php
                             }
                             else {?>
@@ -70,11 +70,11 @@
                             <h3>中目黒　今井</h3><?php
                             }
                             elseif($restaurant == 2){?>
-                            <img src='images/Restaurant/s-0ｎbp.jpg' style='width:250px;'>
+                            <img src='images/Restaurant/s_0nbp.jpg' style='width:250px;'>
                             <h3>浅草　みそら屋</h3><?php
                             }
                             else {?>
-                            <img src='images/Restaurant/s-0ｎbp.jpg' style='width:250px;'>
+                            <img src='images/Restaurant/s_0nbp.jpg' style='width:250px;'>
                             <h3>浅草　kamotowine to and be yourserf.</h3><?php
                             }}
                             
