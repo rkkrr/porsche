@@ -16,11 +16,11 @@
                         ;}}
                     elseif($results == 2){
                         if($restaurant == 1){?>
-                        <img src='images/Restaurant/shinjukutelase.jpg' style='width:250px;'>
+                        <img src='images/Restaurant/shinjukutelase.png' style='width:250px;'>
                         <h3>新宿　チーズの店、新宿テラス</h3><?php
                         ;}
                         elseif($restaurant == 2){?>
-                        <img src='images/Restaurant/shinjukutelase.lpg' style='width:250px;'>
+                        <img src='images/Restaurant/sppakanapoli.png' style='width:250px;'>
                         <h3>新宿　スパッカナポリ</h3><?php
                         }
                         else {?>
