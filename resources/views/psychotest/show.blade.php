@@ -11,7 +11,7 @@
           <div class="animal d-block"> 
               <div style="font-size:30pt;">
                 <?php
-                    if($result <= 25){ 
+                    if($result <= 0){ 
                         print  'あなたは鳳凰タイプです' . PHP_EOL;
                         ?>
                         <div class="center background">
@@ -19,21 +19,21 @@
                         </div>   
                     <?php  }
                         
-                    else if($result <= 50){ 
+                    else if($result <= 20){ 
                         print  'あなたはおおかみタイプです' . PHP_EOL; 
                          ?>
                         <div class="center background">
                             <img src="images/ookami.png" style='width:250px;'>
                         </div>   
                     <?php }
-                    else if($result <= 75){ 
+                    else if($result <= 50){ 
                         print  'あなたはこじかタイプです' . PHP_EOL; 
                          ?>
                         <div class="center background">
                             <img src="images/deer image.jpg" style='width:250px;'>
                         </div>   
                     <?php }
-                    else if($result <= 100){ 
+                    else if($result <= 90){ 
                         print  'あなたはひつじタイプです' . PHP_EOL;  
                          ?>
                         <div class="center background">
@@ -51,14 +51,11 @@
             </div>
         </div>
     </div>
-        <br><br>
-        
+        <br>
                        
                    
         </div>
         </div>
-        
-        <br>
         <div class="container1">
         <div class="row">
         <div class="d-block">
@@ -94,7 +91,7 @@
                             <ul class="list-unstyled">
                                 <?php 
                                 //鳳凰
-                                    if($result <= 25){ 
+                                    if($result <= 0){ 
                                         if($content == 1){
                                 ?> 
                                 
@@ -115,7 +112,7 @@
                                             print "<font size = 4px>仲間を失って一人ぼっちのおさかなが、海のさまざまないきものと出会ううちに、勇気をもって踏み出すことを学んでいくお話です。 </font>". PHP_EOL;
                                     }}
                                 //おおかみ
-                                    elseif($result <= 50){
+                                    elseif($result <= 20){
                                         if($content == 1){
                                 ?>
                                 
@@ -135,29 +132,9 @@
                                             print "<br>";
                                             print "<font size = 4px>世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓発本。<font>". PHP_EOL;
                                     }}
-                                //こじか
-                                    elseif($result <= 75){
-                                        if($content == 1){
-                                ?>
-                                
-                                            <br><span class="glyphicon glyphicon-film" style="font-size: 40px"></span></br>
-                                
-                                <?php
-                                            print  "<h2> 'マイ・インターン' </h2>"; 
-                                            print "<br>";
-                                            print "<font size = 4px> プライベートと仕事、どっちも大切にしたい。そんなあなたに贈る一作。 </font>". PHP_EOL;} 
-                                             else{
-                                ?>
-                                         
-                                                <br><span class="glyphicon glyphicon-book" style="font-size: 40px"></span></br>
-                                                
-                                    <?php   
-                                                print  "<h2> 『嫌われる勇気』 </h2>". PHP_EOL; 
-                                                print "<br>";
-                                                print "<font size = 4px>世界はシンプルだ、だれもが幸福になれるというアドラー博士の教えを若者との対話形式で読み解く自己啓発本。<font>". PHP_EOL;
-                                        }}
+                               
                                     //こじか
-                                        elseif($result <= 75){
+                                        elseif($result <= 50){
                                             if($content == 1){
                                     ?>
                                     
@@ -178,7 +155,7 @@
                                                 print "<font size = 4px>可愛いワンちゃんに癒されながらも、ページをめくるたびに人生における大切なことを教えてくれる一冊です。</font>". PHP_EOL;
                                         }}
                                     //ひつじ
-                                        elseif($result <= 100){
+                                        elseif($result <= 90){
                                             if($content == 1){
                                     ?>
                                     
@@ -438,9 +415,8 @@
                 </div>
             </div>
         </div>
-            <br><br>
-            <a class="jump2 btn btn-lg btn-warning col-md-offset-2" href="{{ route("test2.take2") }}" role="button">やっぱり誰かと過ごしたい人はこちら！</a> 
-            <a class="jump2 btn btn-lg btn-warning col-md-offset-2" href="{{ route("psychotest.testresult") }}" role="button">他のタイプも見てみたい人はこちら！！</a> 
+            <br>
+            <a class="jump2 btn btn-lg btn-warning col-md-offset-4" href="{{ route("psychotest.testresult") }}" role="button">他のタイプも見てみたい人はこちら！！</a> 
 
             <br><br><br><br><br><br><br><br><br>
     </div>

@@ -171,3 +171,7 @@ tr {
   height: 500px;
   position: fixed;
 }
+.radio {
+  width: 17px;
+  height: 18px;
+}

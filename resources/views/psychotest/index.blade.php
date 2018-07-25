@@ -15,7 +15,7 @@
         </div>
         <div class="text-center">
             <div class="square_btn">
-                <a href="test">ひとりで！</a>
+                <a href="test">今日は一人で過ごしたい！</a>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
         </div>
         <div class="text-center">
             <div class ="square_btn">
-                <a href="test2">みんなと！</a>
+                <a href="test2">誰かとごはんに行きたい！</a>
             </div>
         </div>
     </div>
