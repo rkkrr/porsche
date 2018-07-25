@@ -53,8 +53,14 @@
     </div>
         <br><br>
         
-    <br>
-    <div class="row">
+                       
+                   
+        </div>
+        </div>
+        
+        <br>
+        <div class="container1">
+        <div class="row">
         <div class="d-block">
             <div class="result">
                 <div class="d-block col-sm-offset-1 col-sm-5"> 
@@ -75,6 +81,7 @@
                     </div>
                 </div>
             </div>
+        </div>
             
         <div class="d-block col-sm-5">
             <div class="panel panel-info">
@@ -220,9 +227,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    
+        </div>
+        </div>
+        </div>
+        </div>
+        </div class="container1">
         <div class="row">
        
             <div class="d-block col-sm-offset-1 col-sm-5">
@@ -431,7 +440,7 @@
         </div>
             <br><br>
             <a class="jump2 btn btn-lg btn-warning col-md-offset-4" href="{{ route("test2.take2") }}" role="button">やっぱり誰かと過ごしたい人はこちら！</a> 
-            <br><br><br><br><br><br>
+            <br><br><br>
     </div>
 </div>
 @endsection
