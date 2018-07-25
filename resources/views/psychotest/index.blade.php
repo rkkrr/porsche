@@ -11,7 +11,7 @@
 <div class="d-block col-sm-offset-1 col-sm-5"> 
     <div class="box6">
         <div class="center background">
-            <img src='images/alone_panda_image.jpg' style='width:415px;'>
+            <img src='images/alone_panda_image.jpg' style='width:415px;'><br><br>
         </div>
         <div class="text-center">
             <div class="square_btn">
@@ -19,13 +19,13 @@
             </div>
         </div>
     </div>
-</div>
+<br><br></div>
 
         
 <div class="d-block col-sm-5"> 
     <div class="box6">
         <div class="center background">
-            <img src='images/party_panda_image.jpg' style='width:415px;'>
+            <img src='images/party_panda_image.jpg' style='width:415px;'><br><br>
         </div>
         <div class="text-center">
             <div class ="square_btn">
@@ -33,5 +33,5 @@
             </div>
         </div>
     </div>
-</div>
+<br><br></div>
 @endsection
