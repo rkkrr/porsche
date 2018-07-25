@@ -16,11 +16,11 @@
                         ;}}
                     elseif($results == 2){
                         if($restaurant == 1){?>
-                        <a href="https://tabelog.com/tokyo/A1304/A130401/13187399/"><img src='images/Restaurant/shinjukutelase.jpg' style='width:250px;'>
+                        <a href="https://tabelog.com/tokyo/A1304/A130401/13187399/"><img src='images/Restaurant/shinjukutelase.png' style='width:250px;'>
                         <h3>新宿　チーズの店、新宿テラス</h3></a><?php
                         ;}
                         elseif($restaurant == 2){?>
-                        <a href="https://r.gnavi.co.jp/g454118/"><img src='images/Restaurant/shinjukutelase.png' style='width:250px;'>
+                        <a href="https://r.gnavi.co.jp/g454118/"><img src='images/Restaurant/sppakanapoli.png' style='width:250px;'>
                         <h3>新宿　スパッカナポリ</h3></a><?php
                         }
                         else {?>
