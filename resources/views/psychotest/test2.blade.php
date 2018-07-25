@@ -12,10 +12,10 @@
      '1' => '中華',
      '2' => 'イタリアン',
      '3' => '和食',
-     '4' => '飲み'], null, ['class' => 'btn btn-primary btn-lg dropdown-toggle']
+     '4' => '飲み'], null, ['class' => 'btn btn-default btn-lg dropdown-toggle']
   )}}
   <br><br><br><br><br><br>
-  {!! Form::submit('同じ気分の人を見てみよう！', ['class' => 'btn btn-lg btn-primary']) !!}
+  {!! Form::submit('同じ気分の人を見てみよう！', ['class' => 'btn btn-lg btn-warning']) !!}
   {!! Form::close() !!}
     </div> 
 </div>
