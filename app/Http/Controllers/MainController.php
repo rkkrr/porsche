@@ -88,6 +88,10 @@ class MainController extends Controller
         return view ('psychotest.test2');
     } 
     
+     public function testresult(){
+         return view('psychotest.testresult');
+         
+     }
 
     public function invitings($id)
     {

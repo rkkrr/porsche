@@ -1,0 +1,66 @@
+.title{
+    text-align: center;
+    color:navy;
+}
+
+.container{
+    width: 100%;
+}
+
+.hako1,.hako2,.hako3,.hako4,.hako5{
+    width: 100%;
+    float: left;
+    padding-left: 30%;
+    
+}
+
+.box1,.box3,.box5,.box7,.box9 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+    float: left;
+   
+}
+
+.box1 .box-title,.box3 .box-title,.box5 .box-title,.box7 .box-title,.box9 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box1 p,.box3 p,.box5 p,.box7 p,.box9 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.box2,.box4,.box6,.box8,.box10 {
+    float: left;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #cde4ff;/*背景色*/
+}
+.box2 p,.box4 p,.box6 p,.box8 p ,.box10 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+.box1,.box3,.box5,.box7,.box9{
+   float: left;
+   
+} 
+
+
