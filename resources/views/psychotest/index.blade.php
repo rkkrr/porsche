@@ -8,7 +8,10 @@
 
 <br>
 <br>
+ <div class="wrapper">
                     <h3 class="top-title">今の気分をえらんでね。</h3>
+
+<div class="row">
     <div class="d-block col-sm-offset-1 col-sm-5"> 
     <div class="box6">
         <div class="center background">
@@ -23,7 +26,6 @@
         </div>
     </div>
     </div>
-        
     <div class="d-block col-sm-5"> 
     <div class="box6">
         <div class="center background">
@@ -34,10 +36,12 @@
                 
                     <div class ="square_btn">
                         <a href="test2">みんなと！</a>
-                  
+                 <div class="push"></div>
+                  </div>
                 </div>
             </div>
         </div>
         </div>
+</div>
     </div>
 @endsection

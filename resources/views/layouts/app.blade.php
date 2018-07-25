@@ -34,7 +34,7 @@
 
         <?php if($url == "/"){ ?>
         @include('commons.footbar2')
-<?php }else{ ?>
+        <?php }else{ ?>
 
         @include('commons.footbar')
         

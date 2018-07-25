@@ -31,12 +31,31 @@
     color:#12406B;
 }
 
+#wrap{
+     width: 100%;
+     position: relative;
+     height:auto !important; /*IE6対策*/
+     height: 100%; /*IE6対策*/
+     min-height: 100%;
+}
+#contents{
+     padding-bottom:140px; /*フッターの高さと同じ*/
+}
+#footer{
+    height:140px;
+     position:absolute;
+     bottom:0;
+}
 /*//bootstrap footbar*/
+html,body{
+     height:100%;
+}
 .footbar {
     display: block;
     position: relative;
     background-color: #ccc;
     min-height:30px;
+    margin:0px;
     height: 100px !important;
     border:none;
     color: #fff;
