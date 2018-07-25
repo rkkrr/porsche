@@ -22,6 +22,7 @@
                         <li>{!! link_to_route('psychotest.home', $user->name )!!}</li>
                         <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
                 </ul>
+
                    
                     @else
                      <div class="navbar-header">

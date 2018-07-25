@@ -5,4 +5,3 @@
             <li>Released under the MIT license</li>
         </ul>
 </footer>
-</html>
