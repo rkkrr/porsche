@@ -95,19 +95,24 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="d-block  col-sm-5">
-            <div class="move_center">
-                <div class="panel panel-danger">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">レシピ</h3>
-                    </div>
-                    <div class="panel-body">
-                        @include ('psychotest.restaurant3')  
-                    </div>
-                </div>
+            <div class="panel-body">
+                @include ('psychotest.restaurant2') 
+               
             </div>
+        </div>
+        </div>
+    </div>
+        
+    <div class="d-block  col-sm-5">
+        <div class="move_center">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">レシピ</h3>
+            </div>
+            <div class="panel-body">
+                @include ('psychotest.restaurant3')  
+            </div>
+        </div>
         </div>
     </div>
 </div>
