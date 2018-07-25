@@ -442,7 +442,7 @@
             <a class="jump2 btn btn-lg btn-warning col-md-offset-2" href="{{ route("test2.take2") }}" role="button">やっぱり誰かと過ごしたい人はこちら！</a> 
             <a class="jump2 btn btn-lg btn-warning col-md-offset-2" href="{{ route("psychotest.testresult") }}" role="button">他のタイプも見てみたい人はこちら！！</a> 
 
-            <br><br><br>
+            <br><br><br><br><br><br><br><br><br>
     </div>
 </div>
 @endsection

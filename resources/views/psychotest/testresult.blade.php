@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="{{ secure_asset('css/testresult.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/testresult.css') }}">
 @extends('layouts.app')
 
 @section('content')
@@ -74,3 +72,6 @@
         </div>
     </div>
 </div>
+<br><br><br><br><br><br>
+
+@endsection
