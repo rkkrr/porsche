@@ -14,6 +14,10 @@
   height:400px;
 }
 
+.move_center {
+  text-align:center;
+}
+
 .button_center{
   text-align:center;
   position:absolute;
@@ -26,6 +30,7 @@ padding: 0.5em 0;/*上下の余白*/
 border-top: solid 3px #ff8000;/*上線*/
 border-bottom: solid 3px #ff8000;/*下線*/
 margin: 0 auto;
+text-align:center;
 }
 
 .ribbon2 {
