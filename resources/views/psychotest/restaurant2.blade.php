@@ -25,7 +25,7 @@
                         }
                         else {?>
                         <a href="https://tabelog.com/tokyo/A1310/A131002/13199828/"><img src='images/Restaurant/gyozafondue.jpg' style='width:250px;'>
-                        <h3>神田　WARASHIBE CHOZYA</h3></a><?php
+                        <h3>神田　WARASHIBE GYOZA</h3></a><?php
                         }}
                         
                     elseif($results == 3){

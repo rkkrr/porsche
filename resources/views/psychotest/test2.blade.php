@@ -16,6 +16,5 @@
         <br><br><br><br><br><br>
         {!! Form::submit('同じ気分の人を見てみよう！', ['class' => 'btn btn-lg btn-warning']) !!}
         {!! Form::close() !!}
-    </div> 
-</div>
+</div> 
 @endsection
