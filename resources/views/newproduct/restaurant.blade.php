@@ -37,7 +37,7 @@
                  <?php
                     $results = $data->foodtype;
                     $restaurant = rand(1,3);
-                    if($results == 0){
+                    if($results == 1){
                         if($restaurant == 1){?>
                         <img src='images/Restaurant/chinese1.jpg' style='width:250px;'>
                         <h3>渋谷　南翔饅頭店</h3><?php
@@ -50,7 +50,7 @@
                         <img src='images/Restaurant/chinese3.jpg' style='width:250px;'>
                         <h3>三軒茶屋 燕来香 </h3><?php
                         ;}}
-                    elseif($results == 5){
+                    elseif($results == 2){
                         if($restaurant == 1){?>
                         <img src='images/Restaurant/shinjukutelase.jpg' style='width:250px;'>
                         <h3>新宿　チーズの店、新宿テラス</h3><?php
@@ -64,7 +64,7 @@
                         <h3>渋谷　餃子フォンデュ</h3><?php
                         }}
                         
-                    elseif($results == 10){
+                    elseif($results == 3){
                         if($restaurant == 1){?>
                         <img src='images/Restaurant/imai-lunch.jpg' style='width:250px;'>
                         <h3>中目黒　今井</h3><?php
@@ -105,7 +105,7 @@
                 
                     $results = $data->foodtype;
                     $recipe = rand(1,3);
-                    if($results == 0){
+                    if($results == 1){
                         if($recipe == 1){?>
                         <img src='images/dishes/banbanzi-.jpg' style='width:250px;'>
                         <h3>バンバンジー</h3><?php
@@ -118,7 +118,7 @@
                         <img src='images/dishes/hoiko-ro-.jpg' style='width:250px;'>
                         <h3>ホイコーロー</h3><?php
                         ;}}
-                    elseif($results == 5){
+                    elseif($results == 2){
                         if($recipe == 1){?>
                         <img src='images/dishes/lasagna.jpg' style='width:250px;'>
                         <h3>ラザニア</h3><?php
@@ -132,7 +132,7 @@
                         <h3>ナポリタン</h3><?php
                         }}
                         
-                    elseif($results == 10){
+                    elseif($results == 3){
                         if($recipe == 1){?>
                         <img src='images/dishes/karei_nitsuke.jpg' style='width:250px;'>
                         <h3>カレイの煮つけ</h3>
