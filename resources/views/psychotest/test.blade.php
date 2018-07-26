@@ -113,11 +113,11 @@
     </tr>
     
     <tr>
-        <th class="warning" colspan="1"></th>
-        <td class="warning"><h4><label>映画</label></h4></td>
-        <td class="warning"><h4><label>本</label></h4></td>
-        <td class="warning" clospan="1"></td>
-        <td class="warning" clospan="1"></td>
+        <th class="primary" colspan="1"></th>
+        <td class="primary"><h4><label>映画</label></h4></td>
+        <td class="primary"><h4><label>本</label></h4></td>
+        <td class="primary" clospan="1"></td>
+        <td class="primary" clospan="1"></td>
     </tr>
         
     
@@ -132,10 +132,6 @@
 
   {!! Form::submit('あなたの孤独度は…！', ['class' => 'btn btn-lg btn-primary btn-block strong']) !!}
   {!! Form::close() !!}
-<br>
-<br>
-<br>
-<br>
-
+<br><br><br><br><br><br><br>
 
 @endsection
