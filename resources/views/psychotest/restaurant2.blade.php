@@ -34,21 +34,12 @@
                         <h3>中目黒　三盃</h3></a><?php
                         }
                         elseif($restaurant == 2){?>
-<<<<<<< HEAD
-                        <img src='images/Restaurant/s_0nbp.jpg' style='width:250px;'>
-                        <h3>浅草　みそら屋</h3><?php
-                        }
-                        else {?>
-                        <img src='images/Restaurant/s_0nbp.jpg' style='width:250px;'>
-                        <h3>浅草　kamotowine to and be yourserf.</h3><?php
-=======
                         <a href="https://tabelog.com/tokyo/A1311/A131102/13205593/"><img src='images/Restaurant/s_0nbp.jpg' style='width:250px;'>
                         <h3>浅草　みそら屋</h3></a><?php
                         }
                         else {?>
                         <a href="https://tabelog.com/tokyo/A1311/A131102/13159975/"><img src='images/Restaurant/s_0nbp.jpg' style='width:250px;'>
                         <h3>浅草　わいん家</h3></a><?php
->>>>>>> 76294c0b94d6f962e87bfc1c5292139c89509650
                         }}
                         
                     else{
