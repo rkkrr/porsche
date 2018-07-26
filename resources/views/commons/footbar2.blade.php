@@ -7,4 +7,3 @@
         </ul>
     </nav>
 </footer>
-</html>

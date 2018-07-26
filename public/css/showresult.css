@@ -11,8 +11,6 @@ h1 {
     background-size: cover;
     height: 100px;
 }
-
-
 /*//bootstrap navbar*/
 .navbar {
     background-color: #FF5733;
@@ -75,7 +73,12 @@ h1 {
     letter-spacing: 2px;
 }
 
-.douki li{
+.douki{
     font-size: 30px;
-    display: inline-block;
+}
+.food-douki {
+        border: none;
+}
+.douki td{
+    width: 200px;
 }

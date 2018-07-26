@@ -7,37 +7,36 @@
 
 <br><br>
 <div class="text-center">
-    <h3 class="top-title">今の気分をえらんでね。</h3>
+    <h3 class="top-title">どのように過ごしたいですか？</h3>
 </div>
 <div class="d-block col-sm-offset-1 col-sm-5"> 
 
     <div class="box6">
         <div class="center background">
-            <img src='images/alone_panda_image.jpg' style='width:415px;'>
+            <img src='images/alone_panda_image.jpg' style='width:415px;'><br><br>
         </div>
         <div class="text-center">
             <div class="square_btn">
-                <a href="test">ひとりで！</a>
+                <a href="test">今日は一人で過ごしたい！</a>
             </div>
         </div>
     </div>
-
-</div>
+<br><br></div>
 
         
 <div class="d-block col-sm-5"> 
 
     <div class="box6">
         <div class="center background">
-            <img src='images/party_panda_image.jpg' style='width:415px;'>
+            <img src='images/party_panda_image.jpg' style='width:415px;'><br><br>
         </div>
 
         <div class="text-center">
             <div class ="square_btn">
-                <a href="test2">みんなと！</a>
+                <a href="test2">誰かとごはんに行きたい！</a>
             </div>
         </div>
 
     </div>
-</div>
+<br><br></div>
 @endsection

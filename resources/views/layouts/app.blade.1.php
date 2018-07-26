@@ -4,9 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <script src="https://use.typekit.net/weg1dte.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
         <title>porsche</title>
         
@@ -17,29 +14,31 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="../js/result.js"></script>
         
-        
         <link rel="stylesheet" href="{{ secure_asset('css/showresult.css') }}">
     </head>
-    <body>
+    <body style='min-height:100%'>
         <?php
         $user=Auth::user();
         ?>
         @include('commons.navbar', ['user'=>$user])
+
         <div class="container">
             @include('commons.error_messages')
 
             @yield('content')
-            
-            <?php
-                $url = $_SERVER['REQUEST_URI'];
-             ?>
+        
+                <br>
+                <?php
+                    $url = $_SERVER['REQUEST_URI'];
+                 ?>
+        
+                <?php if($url == "/"){ ?>
+            @include('commons.footbar2')
+                <?php }else{ ?>
     
-            <?php if($url == "/"){ ?>
-                @include('commons.footbar2')
-            <?php }else{ ?>
-                @include('commons.footbar')
-            <?php } ?>
+            @include('commons.footbar')
+            
+                <?php } ?>
         </div>
-
     </body>
 </html>

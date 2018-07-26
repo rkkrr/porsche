@@ -2,21 +2,40 @@ body {
     background-image: url("../images/welwelwelimage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: green;
     
 }
 
 
+.square_btn{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1.5em 2em;
+    text-decoration: none;
+    border-left: solid 4px #005500;
+    border-right: solid 4px #005500;
+    color: #FFFFFF;
+    background: #66CCCC;
+    transition: .4s;
+}
+
+.square_btn:hover {
+    background: #009966;
+    color: #FFF;
+}
 a.cp_btn {
 display: inline-block;
 position: relative;
 width: 160px;
 padding: 0.8em;
 text-align: center;
-border-top: 2px solid #FFFFFF;
-border-bottom: 2px solid #FFFFFF;
+border-top: 2px solid #FF5733;
+border-bottom: 2px solid #FF5733;
 text-decoration: none;
 font-weight: bold;
-color: #FFFFFF;
+color: #FF5733;
+background-color: rgb(255, 255, 255, 0.9);
 }
 a.cp_btn:before, a.cp_btn:after {
 content: '';
@@ -24,7 +43,7 @@ position: absolute;
 top: -7px;
 width: 2px;
 height: calc(100% + 14px);
-background-color: #FFFFFF;
+background-color: #FF5733;
 transition: .3s;
 }
 a.cp_btn:before {
